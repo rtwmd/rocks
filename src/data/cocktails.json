@@ -1,0 +1,275 @@
+[
+  {
+    "id": 1,
+    "title": "Grand Theft Cosmo",
+    "slug": "grand-theft-cosmo",
+    "ingredients": "Ketel One Citroen, St. Germain, Solerno, Cranberry",
+    "components": [
+      "3 oz Ketel One Citroen vodka",
+      "1/2 oz St. Germain elderflower liqueur",
+      "1/2 oz Solerno blood orange liqueur",
+      "3/4 oz Cranberry juice"
+    ],
+    "instructions": "Shake all ingredients over ice and strain into martini glass. Garnish with a lemon twist or a cranberry.",
+    "backstory": "Named because Ashley stole this from me after I first made it and claimed it as her own.",
+    "tags": ["vodka", "stolen", "martini", "elderflower", "orange"],
+    "created": "2022-01-12",
+    "ashleyfav": 1,
+    "housefav": 1
+  },
+  {
+    "id": 2,
+    "title": "Tina-rita",
+    "slug": "tina-rita",
+    "ingredients": "Reposado tequila, Grand Marnier, Agave, Lime",
+    "components": [
+      "2 1/2 oz Reposado tequila",
+      "1 1/2 oz Grand Marnier",
+      "1 1/2 oz Lime juice",
+      "1 oz Agave nectar"
+    ],
+    "instructions": "Combine all ingredients and stir until agave dissolved. Pour over ice into salt rimmed glass.",
+    "backstory": "Formerly called the Tiffany from HR-rita. The mixing of the drink was typical preceded by a call from Tina starting of with 'You are not going to believe this sh*t!'",
+    "tags": ["HR", "walden", "margarita", "salt"],
+    "created": "2021-08-10",
+    "ashleyfav": 0,
+    "housefav": 1
+  },
+  {
+    "id": 3,
+    "title": "Passenger Seat (The Sunday Cocktail)",
+    "slug": "passenger-seat",
+    "ingredients": "Cognac, St. Germain, Solerno, Lemon",
+    "components": [
+      "2 oz Cognac",
+      "1 oz St. Germain elderflower liqueur",
+      "1/2 oz Solerno blood orange liqueur",
+      "1/2 oz Lemon juice"
+    ],
+    "instructions": "Combine all ingredients and pour into lowball glass with a large ice cube",
+    "backstory": "Modeled after the classic Sidecar cocktail. This is also known as Ashley's Sunday cocktail since she enjoys sipping this while watching the Green Bay Packers.",
+    "tags": ["elderflower", "football", "orange", "green bay packers"],
+    "created": "2021-01-17",
+    "ashleyfav": 1,
+    "housefav": 0
+  },
+  {
+    "id": 4,
+    "title": "Empress Polly",
+    "slug": "empress-polly",
+    "ingredients": "Botanist, Empress 1908 Indigo, St. Germain, Lavender bitters",
+    "components": [
+      "1 1/2 oz Botanist Gin",
+      "1 oz Empress 1908 Indigo gin",
+      "1 oz St. Germain elderflower liqueur",
+      "1 dash lavender bitters",
+      "1 peel lemon rind"
+    ],
+    "instructions": "Combine ingredients (including the lemon rind) and shake over ice. Strain into a martini glass leaving out the rind. Garnish with a lemon twist.",
+    "backstory": "Created for Miss Polly at the beginning of Covid for an outdoor dinner.",
+    "tags": ["elderflower", "gin", "martini", "covid"],
+    "created": "2019-07-01",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 5,
+    "title": "Sixty Miles from Belfast",
+    "slug": "sixty-miles-from-belfast",
+    "ingredients": "Bushmills Black Bush, Luxardo Maraschino Originale, Amaro Nonino, Orange bitters",
+    "components": [
+      "1/2 oz Bushmills Black Bush Irish whiskey",
+      "1/2 Amaro Nonino",
+      "1/2 Luxardo Maraschino Originale liqueur",
+      "2 dashes orange bitters"
+    ],
+    "instructions": "Combine all ingredients and pour into lowball glass with a large ice cube. Garnish with a Luxardo cherry",
+    "backstory": "Inspired by Ashley's client at the time who was in Northern Ireland. Bushmills is about 60 miles from Belfast.",
+    "tags": ["irish", "whiskey", "cherry", "ireland"],
+    "created": "2022-04-10",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 6,
+    "title": "I Want Something Orange",
+    "slug": "i-want-something-orange",
+    "ingredients": "Ciroc Summer Citrus, Ketel One Orange, Cranberry, Cointreau",
+    "components": [
+      "2 oz Ciroc Summer Citrus vodka",
+      "1 oz Ketel One Orange vodka",
+      "1 oz Cranberry juice",
+      "1/2 oz Cointreau"
+    ],
+    "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with an orange twist.",
+    "backstory": "Ashley was sitting on the deck looking over the lake and said 'I want something orange.'",
+    "tags": ["martini", "cosmo", "vodka"],
+    "created": "2024-08-02",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 7,
+    "title": "Crazy Daisy",
+    "slug": "crazy-daisy",
+    "ingredients": "Ketel One, Ketel One Citroen, Lillet Blanc, Simple, Lemon, Absinthe",
+    "components": [
+      "2 oz Ketel One vodka",
+      "1 oz Ketel One Citroen vodka",
+      "1/2 oz Lillet Blanc",
+      "1/2 oz Lemon juice",
+      "1/2 oz Simple syrup",
+      "Absinthe"
+    ],
+    "instructions": "Rinse martini glass with absinthe. Combine remaining ingredients and shake over ice. Strain into a martini glass. Garnish with a lemon twist.",
+    "backstory": "Created one evening when Ashely was fed up with Daisy (one of our English bulldogs).",
+    "tags": ["martini", "bulldog", "irresistibulls"],
+    "created": "2023-12-11",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 8,
+    "title": "A Touch of Spring",
+    "slug": "touch-of-spring",
+    "ingredients": "Ketel One, St. Germain, Brut Sparkling Wine, Lemon",
+    "components": [
+      "2 oz Ketel One vodka",
+      "1 1/2 oz St. Germain elderflower liqueur",
+      "1 1/2 oz Brut sparkling wine",
+      "3/4 oz Lemon juice"
+    ],
+    "instructions": "Pour sparkling wine into a coupe glass. Combine remaining ingredients and shake over ice. Strain into the coupe glass with the wine. Garnish with a lemon twist,",
+    "backstory": "",
+    "tags": ["coupe", "champagne", "vodka", "martini"],
+    "created": "2023-04-17",
+    "ashleyfav": 1,
+    "housefav": 0
+  },
+  {
+    "id": 9,
+    "title": "The Everly",
+    "slug": "the-everly",
+    "ingredients": "Empress 1908 Indigo, St. Germain, Cointreau, Brut Sparkling Wine",
+    "components": [
+      "2 oz Empress 1908 Indigo gin",
+      "1/2 oz St. Germain elderflower liqueur",
+      "1/2 oz Cointreau",
+      "1 1/2 oz Brut sparkling wine"
+    ],
+    "instructions": "Combine first three ingredients into a shaker with ice and stir. Strain into a martini glass. Top with the sparkling wine. Garnish with a lemon twist.",
+    "backstory": "Inspired by the birth of the beautiful Everly on 11-15-2022. A cocktail as elegant and beautiful as she.",
+    "tags": ["champagne", "martini", "gin"],
+    "created": "2022-11-15",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 10,
+    "title": "Dog Park",
+    "slug": "dog-park",
+    "ingredients": "Bulldog gin, Rose sparkling wine, Lemon, Simple",
+    "components": [
+      "3 oz Bulldog gin",
+      "1 1/2 Rose sparkling wine",
+      "1 oz Lemon juice",
+      "1/2 oz Simple syrup"
+    ],
+    "instructions": "Combine gin, lemon juice, and simple syrup into a shaker with ice and stir. Strain into a coupe glass. Top with the sparkling wine. Garnish with a lemon twist.",
+    "backstory": "Created for Ashley after coming back from a trip to the dog park with Penelope (one of our English bulldogs).",
+    "tags": ["martini", "coupe", "irresistibulls", "gin"],
+    "created": "2021-03-21",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 11,
+    "title": "Running Off With The Princess",
+    "slug": "running-off-with-the-princess",
+    "ingredients": "Empress 1908 Elderflower Rose, St. Germain, Solerno, Cranberry",
+    "components": [
+      "2 oz Empress 1908 Elderflower Rose gin",
+      "1/2 oz St. Germain elderflower liqueur",
+      "1/2 oz Solerno blood orange liqueur",
+      "1/2 Cranberry juice"
+    ],
+    "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with an orange twist.",
+    "backstory": "Ashley requested something similar to a Grand Theft Cosmo...but different. ",
+    "tags": ["cosmo", "martini", "gin"],
+    "created": "2023-10-31",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 12,
+    "title": "La Marguerite",
+    "slug": "la-marguerite",
+    "ingredients": "Reposado, Grand Marnier, Lime, Brut Sparkling Wine",
+    "components": [
+      "2 oz Reposado tequila",
+      "1/2 oz Grand Marnier",
+      "3/4 oz Lime juice",
+      "Brut sparkling wine"
+    ],
+    "instructions": "Shake first three ingredients over ice and strain into champagne flute. Top with sparkling wine.",
+    "backstory": "Ashley's creation. Margarita meets French 75.",
+    "tags": ["champagne", "flute", "Margarita", "French 75"],
+    "created": "2020-09-22",
+    "ashleyfav": 1,
+    "housefav": 0
+  },
+  {
+    "id": 13,
+    "title": "South Of The Border Flyover",
+    "slug": "south-of-the-border-flyover",
+    "ingredients": "Anejo, Aperol, Agavero, Lime",
+    "components": [
+      "2 oz Anejo tequila",
+      "3/4 oz Aperol",
+      "3/4 oz Agavero agave liqueur",
+      "3/4 oz Lime juice"
+    ],
+    "instructions": "Mix together and serve in lowball glass with a large ice cube. Garnish with an orange twist.",
+    "backstory": "Ashley asked for a margarita-esque cocktail to sip while watching Super Bowl LVII. Inspired by the classic Paper Plane cocktail.",
+    "tags": ["plane", "margarita", "tequila", "lowball"],
+    "created": "2023-02-12",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 14,
+    "title": "Blissful Oblivion",
+    "slug": "blissful-oblivion",
+    "ingredients": "Hpnotiq, Tanqueray Rangpur, Absolut Mango, Triple Sec",
+    "components": [
+      "1 1/2 oz Hpnotiq liqueur",
+      "3/4 oz Tanqueray Rangpur gin",
+      "3/4 oz Absolut Mango vodka",
+      "3/4 oz Triple Sec"
+    ],
+    "instructions": "Combine ingredients and shake over ice. Strain into a coupe glass.",
+    "backstory": "Inspired by Miss Polly’s request for an after dinner fireside cocktail.",
+    "tags": ["coupe", "polly", "vodka", "gin"],
+    "created": "2021-03-06",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 15,
+    "title": "The Polly-Colada",
+    "slug": "the-polly-colada",
+    "ingredients": "Ciroc Coconut, Pineapple Juice",
+    "components": [
+      "1 oz Ciroc coconut vodka",
+      "1/2 oz Ciroc vodka",
+      "2 oz Light pineapple juice",
+      "1 oz Skim milk (optional)"
+    ],
+    "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with a pineapple wedge. Alternatively, can be served in a hurricane glass over ice with a straw.",
+    "backstory": "Created for Polly who loves pina coladas, but did not want the extra calories. Add the milk to give the classic pina colada look.",
+    "tags": ["martini", "vodka", "island", "milk"],
+    "created": "2025-01-03",
+    "ashleyfav": 0,
+    "housefav": 0
+  }
+]
