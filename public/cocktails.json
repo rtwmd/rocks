@@ -26,7 +26,7 @@
       "2 1/2 oz Reposado tequila",
       "1 1/2 oz Grand Marnier",
       "1 1/2 oz Lime juice",
-      "1 oz Agave nectar"
+      "1 tbsp Agave nectar"
     ],
     "instructions": "Combine all ingredients and stir until agave dissolved. Pour over ice into salt rimmed glass.",
     "backstory": "Formerly called the Tiffany from HR-rita. The mixing of the drink was typical preceded by a call from Tina starting of with 'You are not going to believe this sh*t!'",
@@ -141,7 +141,7 @@
     ],
     "instructions": "Pour sparkling wine into a coupe glass. Combine remaining ingredients and shake over ice. Strain into the coupe glass with the wine. Garnish with a lemon twist,",
     "backstory": "",
-    "tags": ["coupe", "champagne", "vodka", "martini"],
+    "tags": ["coupe", "champagne", "vodka", "martini", "elderflower"],
     "created": "2023-04-17",
     "ashleyfav": 1,
     "housefav": 0
@@ -159,7 +159,7 @@
     ],
     "instructions": "Combine first three ingredients into a shaker with ice and stir. Strain into a martini glass. Top with the sparkling wine. Garnish with a lemon twist.",
     "backstory": "Inspired by the birth of the beautiful Everly on 11-15-2022. A cocktail as elegant and beautiful as she.",
-    "tags": ["champagne", "martini", "gin"],
+    "tags": ["champagne", "martini", "gin", "elderflower"],
     "created": "2022-11-15",
     "ashleyfav": 0,
     "housefav": 0
@@ -195,7 +195,7 @@
     ],
     "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with an orange twist.",
     "backstory": "Ashley requested something similar to a Grand Theft Cosmo...but different. ",
-    "tags": ["cosmo", "martini", "gin"],
+    "tags": ["cosmo", "martini", "gin", "elderflower"],
     "created": "2023-10-31",
     "ashleyfav": 0,
     "housefav": 0
@@ -270,6 +270,238 @@
     "tags": ["martini", "vodka", "island", "milk"],
     "created": "2025-01-03",
     "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 16,
+    "title": "Gus Gus",
+    "slug": "gus-gus",
+    "ingredients": "Bulldog gin, Pimms, Lime, Honey",
+    "components": [
+      "2 1/2 oz Bulldog gin",
+      "1 oz Pimms",
+      "1/2 oz Lime juice",
+      "1 tbsp Honey"
+    ],
+    "instructions": "Combine ingredients in a shaker and stir until honey is completely dissolved. Pour into lowball glass over ice. Garnish with lime twist or honey stick.",
+    "backstory": "Honoring Gus' addition to the Irresistibulls. A little sweet and a little mischievous.",
+    "tags": ["irresistibulls", "english", "gin"],
+    "created": "2025-01-10",
+    "ashleyfav": 1,
+    "housefav": 0
+  },
+  {
+    "id": 17,
+    "title": "Five Star Recruit Spritz",
+    "slug": "five-star-recruit-spritz",
+    "ingredients": "Bulldog gin, Cappelletti, Brut Sparkling Wine, Lemon, Simple",
+    "components": [
+      "2 oz Bulldog gin",
+      "1/2 oz Cappelletti",
+      "1/2 oz Lemon juice",
+      "1/2 oz Simple syrup",
+      "3-4 oz Brut Sparkling Wine"
+    ],
+    "instructions": "Combine ingredients in a shaker over ice and stir. Pour into large wine glass and top with the sparkling wine. Add ice. Garnish with lemon wheel.",
+    "backstory": "Named on Daisy’s gotcha day has a new five-star recruit to the Irresistibulls bulldog team.",
+    "tags": ["irresistibulls", "english", "gin", "gotcha"],
+    "created": "2023-08-23",
+    "ashleyfav": 1,
+    "housefav": 0
+  },
+  {
+    "id": 18,
+    "title": "Happily Ever After",
+    "slug": "happily-ever-after",
+    "ingredients": "Rose wine, St. Germain, Cointreau, Cranberry",
+    "components": [
+      "3 oz Rose wine",
+      "1 oz St. Germain elderflower liqueur",
+      "1/2 oz Cointreau",
+      "1 oz Cranberry juice"
+    ],
+    "instructions": "Can be shaken and strained into a martini glass or served over ice in a lowball glass. ",
+    "backstory": "Created for Tiffany and Grant’s wedding reception. Grant recommends a vodka floater.",
+    "tags": ["wedding", "tiffany", "grant", "vodka", "pink", "elderflower"],
+    "created": "2023-07-15",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 19,
+    "title": "Blue Pontoon",
+    "slug": "blue-pontoon",
+    "ingredients": "Malibu Mango, Blue Curacao, Pineapple, Sprite",
+    "components": [
+      "2 oz Malibu mango rum",
+      "1/2 oz Blue Curacao",
+      "2 oz Pineapple juice",
+      "3 oz Sprite"
+    ],
+    "instructions": "Pour into a hurricane glass and top with ice. Garnish with an orange wheel. Add a straw.",
+    "backstory": "Created for Sterling's 21st birthday pontoon booze cruise.",
+    "tags": ["wedding", "tiffany", "grant", "vodka", "pink"],
+    "created": "2022-08-28",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 20,
+    "title": "The Auggie",
+    "slug": "the-auggie",
+    "ingredients": "Citadel Jardin D'Ete, St. Germain, Cassis, Lemon",
+    "components": [
+      "3 oz Citadel Jardin D'Ete gin",
+      "3/4 oz St. Germain elderflower liqueur",
+      "1/4 oz Mathilde Cassis liqueur",
+      "3/4 oz Lemon juice"
+    ],
+    "instructions": "Combine ingredients in a shaker over ice and stir. Strain into a martini glass. Garnish with a lemon twist.",
+    "backstory": "Created for Auggie, aka Auggie the Dauggie, aka Ron. One of the OG Irresistibulls.",
+    "tags": [
+      "ron",
+      "Dauggie",
+      "irresistibulls",
+      "gin",
+      "martini",
+      "elderflower"
+    ],
+    "created": "2022-03-22",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 21,
+    "title": "Barrie Manhattan",
+    "slug": "barrie-manhattan",
+    "ingredients": "Basil Hayden, Amaro Nonino, Sweet Vermouth, Cherry Bitters",
+    "components": [
+      "2 oz Basil Hayden's bourbon",
+      "1/2 oz Amaro Nonino",
+      "1/2 oz Sweet vermouth",
+      "3 dashes Woodford spiced cherry bitters"
+    ],
+    "instructions": "Combine ingredients in a shaker over ice and stir. Strain into a martini glass. Garnish with a Luxardo cherry.",
+    "backstory": "Created by Barrie. She is the ultimate Manhattan mixologist. We miss seeing you Barrie!",
+    "tags": ["whiskey", "bourbon", "venue", "lincoln", "nebraska"],
+    "created": "2020-09-12",
+    "ashleyfav": 0,
+    "housefav": 1
+  },
+  {
+    "id": 22,
+    "title": "Black Forest Manhattan",
+    "slug": "black-forest-manhattan",
+    "ingredients": "Four Roses, Creme de Cacao, Cherry, Bitters",
+    "components": [
+      "2 oz Four Roses single batch bourbon",
+      "3/4 oz Dark creme de cacao",
+      "3/4 oz Cherry juice",
+      "2 dashes Cherry bitters",
+      "2 dashes Chocolate bitters"
+    ],
+    "instructions": "Combine ingredients and pour into lowball glass over large ice cube. Garnish with Luxardo cherry.",
+    "backstory": "An after dinner dessert style Manhattan.",
+    "tags": ["dessert", "Chocolate", "bourbon", "whiskey"],
+    "created": "2022-01-02",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 23,
+    "title": "Distinguished Gentleman",
+    "slug": "distinguished-gentleman",
+    "ingredients": "Basil Hayden, Grand Marnier, Amaro Montenegro",
+    "components": [
+      "3 oz Basil Hayden's bourbon",
+      "1 oz Grand Marnier",
+      "1/2 oz Amaro Montenegro"
+    ],
+    "instructions": "Combine ingredients in shaker over ice. Strain into martini glass. Garnish with Luxardo cherry.",
+    "backstory": "Created in honor of big Bruiser.",
+    "tags": [
+      "bruiser",
+      "irresistibulls",
+      "martini",
+      "bourbon",
+      "whiskey",
+      "dog"
+    ],
+    "created": "2024-02-23",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 24,
+    "title": "If Wisconsin Created the Manhattan",
+    "slug": "if-wisconsin-created-the-manhattan",
+    "ingredients": "Woodford Reserve, Solerno, St. Germain, Luxardo Maraschino",
+    "components": [
+      "1 1/2 oz Woodford Reserve bourbon",
+      "1/2 oz Solerno blood orange liqueur",
+      "1/2 oz St. Germain elderflower liqueur",
+      "1/2 oz Luxardo Maraschino Originale"
+    ],
+    "instructions": "Combine ingredients and pour into lowball glass over large ice cube. Garnish with Luxardo cherry.",
+    "backstory": "Created while brainstorming cocktails for a Morrison family visit. A bit of a spoof on the Wisconsin Old Fashioned.",
+    "tags": ["morrison", "elderflower", "bourbon", "whiskey"],
+    "created": "2022-01-02",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 25,
+    "title": "Momma Lexi",
+    "slug": "momma-lexi",
+    "ingredients": "Maker's Mark, Ghost Coast Orange, Cinnamon Whiskey, Amaro Nonino, Bitters",
+    "components": [
+      "2 oz Maker's Mark bourbon",
+      "1 oz Ghost Coast orange vodka",
+      "1/2 oz Cinnamon whiskey",
+      "1/2 oz Amaro Nonino",
+      "2 dashes Cherry bitters"
+    ],
+    "instructions": "Combine ingredients in shaker over ice. Strain into coupe glass. Garnish with Luxardo cherry.",
+    "backstory": "Created in memory of Momma Lexi.",
+    "tags": ["dog", "bourbon", "whiskey", "vodka"],
+    "created": "2020-10-10",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 26,
+    "title": "Mi Hermano",
+    "slug": "mi-hermano",
+    "ingredients": "Jimador Reposado, Ghost Coast Orange, Agavero",
+    "components": [
+      "2 oz Jimador reposado tequila",
+      "1 oz Ghost Coast orange vodka",
+      "1/2 oz Agavero agave liqueur"
+    ],
+    "instructions": "Combine and pour into lowball glass over large ice cube. Garnish with slice of lime.",
+    "backstory": "Made for my brother Spencer.",
+    "tags": ["tequila", "brother", "vodka", "agave"],
+    "created": "2020-09-26",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 27,
+    "title": "Elderrita",
+    "slug": "elderrita",
+    "ingredients": "Reposado tequila, St. Germain, Solerno, Lime, Agave",
+    "components": [
+      "2 1/2 oz Reposado tequila",
+      "1 1/2 oz St. Germain elderflower liqueur",
+      "1/2 oz Solerno blood orange liqueur",
+      "1 1/2 oz Lime juice",
+      "1 tbsp Agave nectar"
+    ],
+    "instructions": "Combine all ingredients in a shaker and stir until agave dissolved. Pour over ice. Salt rimmed glass is optional.",
+    "backstory": "Ashley requested an elderflower margarita.",
+    "tags": ["elderflower", "margarita", "tequila"],
+    "created": "2021-09-12",
+    "ashleyfav": 1,
     "housefav": 0
   }
 ]

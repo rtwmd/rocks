@@ -20,7 +20,7 @@ const DrinkList = ({ drinks, searchedDrinks, setSearchedDrinks }) => {
         }}
       >
         {searchedDrinks.map((drink) => (
-          <Grid key={drink.id} item>
+          <Grid key={drink.id}>
             <DrinkCard drink={drink} />
           </Grid>
         ))}
@@ -32,17 +32,7 @@ const DrinkList = ({ drinks, searchedDrinks, setSearchedDrinks }) => {
   return (
     <Box className="mainContainer">
       <NavBar drinks={drinks} setSearchedDrinks={setSearchedDrinks} />
-      <Box
-        className="drinkDisplay"
-        // alignItems="center"
-        // justifyContent="center"
-        // sx={{
-        //   flexGrow: 1,
-        //   display: 'grid',
-        // }}
-      >
-        {content}
-      </Box>
+      <Box className="drinkDisplay">{content}</Box>
     </Box>
   )
 }

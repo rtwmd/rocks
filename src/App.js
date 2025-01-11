@@ -7,27 +7,43 @@ function App() {
   const [drinks, setDrinks] = React.useState()
   const [searchedDrinks, setSearchedDrinks] = React.useState([])
 
-  React.useEffect(() => {
-    const loadContent = () => {
-      try {
-        const drinkData = require('./data/cocktails.json')
-
-        if (drinkData) {
+  const loadContent = () => {
+    try {
+      fetch('cocktails.json', {
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            if (response.status === 404) {
+              // Handle 404 Not Found
+              console.error('Drink menu file not found')
+              return ''
+            } else {
+              throw new Error('Network response was not ok')
+            }
+          }
+          return response.json()
+        })
+        .then((drinkData) => {
           setDrinks(drinkData)
-          let sortedData = drinkData.sort(function (a, b) {
-            var textA = a.title.toLowerCase()
-            var textB = b.title.toLowerCase()
-            return textA < textB ? -1 : textA > textB ? 1 : 0
-          })
-          setSearchedDrinks(sortedData)
+          if (drinkData) {
+            let sortedData = drinkData.sort(function (a, b) {
+              var textA = a.title.toLowerCase()
+              var textB = b.title.toLowerCase()
+              return textA < textB ? -1 : textA > textB ? 1 : 0
+            })
+            setSearchedDrinks(sortedData)
+          }
           sessionStorage.setItem('searchString', '')
-        } else {
-          throw new Error('Cocktail menu not found')
-        }
-      } catch (error) {
-        console.log(error.message)
-      }
+        })
+    } catch (error) {
+      console.log('ERROR: ', error.message)
     }
+  }
+  React.useEffect(() => {
     loadContent()
   }, [])
 
