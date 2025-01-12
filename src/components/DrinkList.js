@@ -3,10 +3,10 @@ import { Box } from '@mui/material'
 import Grid from '@mui/material/Grid2'
 import DrinkCard from './DrinkCard'
 import NavBar from './NavBar'
+// import NavBar from './NavBar orig'
 
 const DrinkList = ({ drinks, searchedDrinks, setSearchedDrinks }) => {
   var content = ''
-
   if (drinks) {
     content = (
       <Grid
@@ -38,5 +38,3 @@ const DrinkList = ({ drinks, searchedDrinks, setSearchedDrinks }) => {
 }
 
 export default DrinkList
-
-// xs={12} sm={6} md={4} lg={3} xl={2}

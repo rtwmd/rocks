@@ -8,6 +8,21 @@ import Typography from '@mui/material/Typography'
 import InputBase from '@mui/material/InputBase'
 import LocalBar from '@mui/icons-material/LocalBar'
 import SearchIcon from '@mui/icons-material/Search'
+import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined'
+import { Link as RouterLink } from 'react-router-dom'
+import Link from '@mui/material/Link'
+
+// Copied
+import Drawer from '@mui/material/Drawer'
+import List from '@mui/material/List'
+import Divider from '@mui/material/Divider'
+import ListItem from '@mui/material/ListItem'
+import ListItemButton from '@mui/material/ListItemButton'
+import ListItemIcon from '@mui/material/ListItemIcon'
+import ListItemText from '@mui/material/ListItemText'
+import InboxIcon from '@mui/icons-material/MoveToInbox'
+import MailIcon from '@mui/icons-material/Mail'
+//End Copied
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -53,6 +68,11 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function NavBar({ drinks, setSearchedDrinks }) {
   const [searchTerm, setSearchTerm] = React.useState(' ')
+  const [open, setOpen] = React.useState(false)
+
+  const toggleDrawer = (newOpen) => () => {
+    setOpen(newOpen)
+  }
 
   React.useEffect(() => {
     setSearchTerm(sessionStorage.getItem('searchString') || '')
@@ -76,6 +96,73 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
     setSearchedDrinks(search)
   }
 
+  const handleDrawerSearchButton = (userValue) => () => {
+    const search = drinks.filter(
+      (drink) =>
+        drink.tags
+          .flat()
+          .join(' ')
+          .toLowerCase()
+          .includes(userValue.toLowerCase()) ||
+        drink.ingredients.toLowerCase().includes(userValue.toLowerCase()) ||
+        drink.title.toLowerCase().includes(userValue.toLowerCase())
+    )
+    setSearchTerm(userValue)
+    sessionStorage.setItem('searchString', userValue)
+    setSearchedDrinks(search)
+  }
+
+  const handleAshleyFavs = () => {
+    const search = drinks.filter((drink) => drink.ashleyfav == true)
+    setSearchTerm('')
+    sessionStorage.setItem('searchString', '')
+    setSearchedDrinks(search)
+  }
+
+  const DrawerList = (
+    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
+      <List>
+        {['Martini', 'Margarita'].map((text) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton onClick={handleDrawerSearchButton(text)}>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+        <ListItem disablePadding>
+          <ListItemButton onClick={handleAshleyFavs}>
+            <ListItemText primary="Ashley's Faves 🩵" />
+          </ListItemButton>
+        </ListItem>
+      </List>
+      <Divider />
+      <List>
+        {['Vodka', 'Gin', 'Tequila', 'Whiskey', 'Sparkling'].map((text) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton onClick={handleDrawerSearchButton(text)}>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        <ListItem disablePadding>
+          <ListItemButton>
+            <Link
+              component={RouterLink}
+              to="/about"
+              underline="none"
+              color="textPrimary"
+            >
+              <ListItemText primary="About" />
+            </Link>
+          </ListItemButton>
+        </ListItem>
+      </List>
+    </Box>
+  )
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static">
@@ -86,9 +173,13 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
             color="inherit"
             aria-label="martini glass"
             sx={{ mr: 2 }}
+            onClick={toggleDrawer(true)}
           >
             <LocalBar />
           </IconButton>
+          <Drawer open={open} onClose={toggleDrawer(false)}>
+            {DrawerList}
+          </Drawer>
           <Typography
             variant="h6"
             noWrap
@@ -108,6 +199,16 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
               value={searchTerm}
             />
           </Search>
+          <IconButton
+            size="medium"
+            edge="start"
+            color="inherit"
+            aria-label="clear search"
+            sx={{ ml: 1 }}
+            onClick={handleDrawerSearchButton('')}
+          >
+            <CancelOutlinedIcon />
+          </IconButton>
         </Toolbar>
       </AppBar>
     </Box>

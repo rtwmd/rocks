@@ -2,6 +2,7 @@ import React from 'react'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import DrinkList from './components/DrinkList'
 import DrinkPage from './components/DrinkPage'
+import AboutPage from './components/AboutPage'
 
 function App() {
   const [drinks, setDrinks] = React.useState()
@@ -66,6 +67,7 @@ function App() {
           }
         />
         <Route path="/cocktail/:slug" element={<DrinkPage drinks={drinks} />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>
   )

@@ -21,7 +21,7 @@
     "id": 2,
     "title": "Tina-rita",
     "slug": "tina-rita",
-    "ingredients": "Reposado tequila, Grand Marnier, Agave, Lime",
+    "ingredients": "Reposado Tequila, Grand Marnier, Agave, Lime",
     "components": [
       "2 1/2 oz Reposado tequila",
       "1 1/2 oz Grand Marnier",
@@ -30,7 +30,7 @@
     ],
     "instructions": "Combine all ingredients and stir until agave dissolved. Pour over ice into salt rimmed glass.",
     "backstory": "Formerly called the Tiffany from HR-rita. The mixing of the drink was typical preceded by a call from Tina starting of with 'You are not going to believe this sh*t!'",
-    "tags": ["HR", "walden", "margarita", "salt"],
+    "tags": ["HR", "walden", "margarita", "salt", "tequila"],
     "created": "2021-08-10",
     "ashleyfav": 0,
     "housefav": 1
@@ -76,7 +76,7 @@
     "id": 5,
     "title": "Sixty Miles from Belfast",
     "slug": "sixty-miles-from-belfast",
-    "ingredients": "Bushmills Black Bush, Luxardo Maraschino Originale, Amaro Nonino, Orange bitters",
+    "ingredients": "Bushmills Black Bush, Luxardo Maraschino, Amaro Nonino, Orange bitters",
     "components": [
       "1/2 oz Bushmills Black Bush Irish whiskey",
       "1/2 Amaro Nonino",
@@ -123,7 +123,7 @@
     ],
     "instructions": "Rinse martini glass with absinthe. Combine remaining ingredients and shake over ice. Strain into a martini glass. Garnish with a lemon twist.",
     "backstory": "Created one evening when Ashely was fed up with Daisy (one of our English bulldogs).",
-    "tags": ["martini", "bulldog", "irresistibulls"],
+    "tags": ["martini", "bulldog", "irresistibulls", "vodka"],
     "created": "2023-12-11",
     "ashleyfav": 0,
     "housefav": 0
@@ -141,9 +141,16 @@
     ],
     "instructions": "Pour sparkling wine into a coupe glass. Combine remaining ingredients and shake over ice. Strain into the coupe glass with the wine. Garnish with a lemon twist,",
     "backstory": "",
-    "tags": ["coupe", "champagne", "vodka", "martini", "elderflower"],
+    "tags": [
+      "coupe",
+      "champagne",
+      "vodka",
+      "martini",
+      "elderflower",
+      "sparkling"
+    ],
     "created": "2023-04-17",
-    "ashleyfav": 1,
+    "ashleyfav": 0,
     "housefav": 0
   },
   {
@@ -159,7 +166,7 @@
     ],
     "instructions": "Combine first three ingredients into a shaker with ice and stir. Strain into a martini glass. Top with the sparkling wine. Garnish with a lemon twist.",
     "backstory": "Inspired by the birth of the beautiful Everly on 11-15-2022. A cocktail as elegant and beautiful as she.",
-    "tags": ["champagne", "martini", "gin", "elderflower"],
+    "tags": ["champagne", "martini", "gin", "elderflower", "sparkling"],
     "created": "2022-11-15",
     "ashleyfav": 0,
     "housefav": 0
@@ -204,7 +211,7 @@
     "id": 12,
     "title": "La Marguerite",
     "slug": "la-marguerite",
-    "ingredients": "Reposado, Grand Marnier, Lime, Brut Sparkling Wine",
+    "ingredients": "Reposado Tequila, Grand Marnier, Lime, Brut Sparkling Wine",
     "components": [
       "2 oz Reposado tequila",
       "1/2 oz Grand Marnier",
@@ -213,7 +220,7 @@
     ],
     "instructions": "Shake first three ingredients over ice and strain into champagne flute. Top with sparkling wine.",
     "backstory": "Ashley's creation. Margarita meets French 75.",
-    "tags": ["champagne", "flute", "Margarita", "French 75"],
+    "tags": ["champagne", "flute", "Margarita", "French 75", "tequila"],
     "created": "2020-09-22",
     "ashleyfav": 1,
     "housefav": 0
@@ -222,7 +229,7 @@
     "id": 13,
     "title": "South Of The Border Flyover",
     "slug": "south-of-the-border-flyover",
-    "ingredients": "Anejo, Aperol, Agavero, Lime",
+    "ingredients": "Anejo Tequila, Aperol, Agavero, Lime",
     "components": [
       "2 oz Anejo tequila",
       "3/4 oz Aperol",
@@ -258,7 +265,7 @@
     "id": 15,
     "title": "The Polly-Colada",
     "slug": "the-polly-colada",
-    "ingredients": "Ciroc Coconut, Pineapple Juice",
+    "ingredients": "Ciroc Coconut, Ciroc, Pineapple Juice",
     "components": [
       "1 oz Ciroc coconut vodka",
       "1/2 oz Ciroc vodka",
@@ -267,7 +274,7 @@
     ],
     "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with a pineapple wedge. Alternatively, can be served in a hurricane glass over ice with a straw.",
     "backstory": "Created for Polly who loves pina coladas, but did not want the extra calories. Add the milk to give the classic pina colada look.",
-    "tags": ["martini", "vodka", "island", "milk"],
+    "tags": ["martini", "vodka", "island", "milk", "island"],
     "created": "2025-01-03",
     "ashleyfav": 0,
     "housefav": 0
@@ -340,7 +347,7 @@
     ],
     "instructions": "Pour into a hurricane glass and top with ice. Garnish with an orange wheel. Add a straw.",
     "backstory": "Created for Sterling's 21st birthday pontoon booze cruise.",
-    "tags": ["wedding", "tiffany", "grant", "vodka", "pink"],
+    "tags": ["birthday", "sterling", "boat", "rum", "party"],
     "created": "2022-08-28",
     "ashleyfav": 0,
     "housefav": 0
@@ -437,14 +444,14 @@
     "slug": "if-wisconsin-created-the-manhattan",
     "ingredients": "Woodford Reserve, Solerno, St. Germain, Luxardo Maraschino",
     "components": [
-      "1 1/2 oz Woodford Reserve bourbon",
+      "2 oz Woodford Reserve bourbon",
       "1/2 oz Solerno blood orange liqueur",
       "1/2 oz St. Germain elderflower liqueur",
-      "1/2 oz Luxardo Maraschino Originale"
+      "1/4 oz Luxardo Maraschino Originale"
     ],
     "instructions": "Combine ingredients and pour into lowball glass over large ice cube. Garnish with Luxardo cherry.",
-    "backstory": "Created while brainstorming cocktails for a Morrison family visit. A bit of a spoof on the Wisconsin Old Fashioned.",
-    "tags": ["morrison", "elderflower", "bourbon", "whiskey"],
+    "backstory": "Created while brainstorming cocktails for a Morrison family visit. A bit of a spoof on the Wisconsin Old Fashioned. Of course, if Wisconsin did create the Manhattan it would have been call the Milwaukee.",
+    "tags": ["morrison", "elderflower", "bourbon", "whiskey", "manhattan"],
     "created": "2022-01-02",
     "ashleyfav": 0,
     "housefav": 0
@@ -489,7 +496,7 @@
     "id": 27,
     "title": "Elderrita",
     "slug": "elderrita",
-    "ingredients": "Reposado tequila, St. Germain, Solerno, Lime, Agave",
+    "ingredients": "Reposado Tequila, St. Germain, Solerno, Lime, Agave",
     "components": [
       "2 1/2 oz Reposado tequila",
       "1 1/2 oz St. Germain elderflower liqueur",
@@ -502,6 +509,55 @@
     "tags": ["elderflower", "margarita", "tequila"],
     "created": "2021-09-12",
     "ashleyfav": 1,
+    "housefav": 0
+  },
+  {
+    "id": 28,
+    "title": "Party Time",
+    "slug": "party-time",
+    "ingredients": "Ciroc Peach, Limoncello, Lemon, Grenadine",
+    "components": [
+      "3 oz Ciroc Peach vodka",
+      "1 oz Limoncello",
+      "1 oz Lemon juice",
+      "1/4 oz Grenadine"
+    ],
+    "instructions": "Combine all ingredients and pour into a fun glass. Add a maraschino cherry and a straw.",
+    "backstory": "The drink has a Barbie pink color and goes down quickly. It's original name was the Panty Dropper.",
+    "tags": ["vodka", "pink", "panty dropper"],
+    "created": "2021-02-07",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 29,
+    "title": "Cold Brandone",
+    "slug": "cold-brandone",
+    "ingredients": "Four Roses, Coke Zero",
+    "components": ["2 oz Four Roses bourbon", "Coke Zero"],
+    "instructions": "Pour bourbon into an ice filled rocks glass and top with Coke Zero.",
+    "backstory": "We recognize this is basically whiskey and coke. But it is THE drink for Brandon.",
+    "tags": ["bourbon", "whiskey"],
+    "created": "2022-12-24",
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 30,
+    "title": "Bon Mom",
+    "slug": "bon-mom",
+    "ingredients": "Tanqueray Seville, Grand Marnier, Simple, Club",
+    "components": [
+      "1 1/2 oz Tanqueray Seville gin",
+      "1/2 oz Grand Marnier",
+      "1/4 oz Simple syrup",
+      "Club soda"
+    ],
+    "instructions": "Compine first three ingredients into a rocks glass filled with ice. Top with club soda.",
+    "backstory": "Created for Bon when she called and requested a cocktail idea. For those that like a sweeter drink, add a bit more simple or swap the club soda for Sprite.",
+    "tags": ["gin", "sprite", "giavanna", "soda"],
+    "created": "2021-09-25",
+    "ashleyfav": 0,
     "housefav": 0
   }
 ]

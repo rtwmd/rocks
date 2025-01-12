@@ -1,18 +1,3 @@
-// import React from 'react'
-// import { Link } from 'react-router-dom'
-
-// const DrinkCard = ({ drink }) => {
-//   return (
-//     <div className="drink-card">
-//       <h2>{drink.title}</h2>
-//       <p>{drink.ingredients}</p>
-//       <Link to={`/cocktail/${drink.slug}`}>Read More</Link>
-//     </div>
-//   )
-// }
-
-// export default DrinkCard
-
 import React from 'react'
 import { Link as RouterLink } from 'react-router-dom'
 import Link from '@mui/material/Link'
