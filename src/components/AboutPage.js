@@ -32,17 +32,17 @@ export default function AboutPage() {
       <Card sx={{ minWidth: 275, maxWidth: 800 }}>
         <CardMedia
           component="img"
-          //   height="140"
+          width="300"
           image="irresistibulls.jpeg"
           alt="bulldog picture"
-          sx={{ objectFit: 'contain' }}
+          // sx={{ objectFit: 'contain' }}
         />
         <CardContent>
           <Typography variant="h4" color="#357EC7" component="div">
             Irresistibull Cocktails
           </Typography>
           <Typography variant="body1" component="div">
-            Welcome to Irrestibull Cocktails. We started this project back in
+            Welcome to Irresistibull Cocktails. We started this project back in
             2020 during the COVID-19 lockdown as something fun to do. Over the
             years we have added and dropped drinks from the list. Most of these
             we created in house based on our particular tastes and preferences.
@@ -53,7 +53,7 @@ export default function AboutPage() {
           </Typography>
           <Typography variant="body1" component="div">
             The site theme is inspired by The Irresistibulls, our squad of
-            English Bulldogs. Feel free to check them out on Instagram{' '}
+            English Bulldogs. Feel free to follow them on Instagram{' '}
             <Link
               href="https://www.instagram.com/the_irresistibulls/"
               underline="none"

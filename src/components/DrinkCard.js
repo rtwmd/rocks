@@ -10,11 +10,7 @@ import { CardActionArea } from '@mui/material'
 
 export default function DrinkCard({ drink }) {
   return (
-    <Link
-      underline="none"
-      component={RouterLink}
-      to={`/cocktail/${drink.slug}`}
-    >
+    <Link underline="none" component={RouterLink} to={`/${drink.slug}`}>
       <Card
         raised
         key={drink.id}

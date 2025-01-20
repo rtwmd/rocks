@@ -66,7 +66,7 @@ function App() {
             />
           }
         />
-        <Route path="/cocktail/:slug" element={<DrinkPage drinks={drinks} />} />
+        <Route path="/:slug" element={<DrinkPage drinks={drinks} />} />
         <Route path="/about" element={<AboutPage />} />
       </Routes>
     </Router>

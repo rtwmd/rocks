@@ -1,23 +1,72 @@
 import React from 'react'
-import { useParams, useNavigate } from 'react-router-dom'
+import { useParams, Link as RouterLink } from 'react-router-dom'
+import Link from '@mui/material/Link'
 import Card from '@mui/material/Card'
 import Box from '@mui/material/Box'
 import AppBar from '@mui/material/AppBar'
 import CardContent from '@mui/material/CardContent'
 import CardActions from '@mui/material/CardActions'
+import CardMedia from '@mui/material/CardMedia'
 import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Divider from '@mui/material/Divider'
 
 export default function DrinkPage({ drinks }) {
   const { slug } = useParams()
-  let navigate = useNavigate()
+  const [drink, setDrink] = React.useState('')
 
-  const drink = drinks.find((d) => d.slug === slug)
+  const loadDrink = () => {
+    if (drinks) {
+      setDrink(drinks.find((d) => d.slug === slug))
+    }
+    try {
+      fetch('cocktails.json', {
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+      })
+        .then((response) => {
+          if (!response.ok) {
+            if (response.status === 404) {
+              // Handle 404 Not Found
+              console.error('Bar must be closed. Did not find drink.')
+              return ''
+            } else {
+              throw new Error('Network response was not ok')
+            }
+          }
+          return response.json()
+        })
+        .then((drinkData) => {
+          setDrink(drinkData.find((d) => d.slug === slug))
+        })
+    } catch (error) {
+      console.log('ERROR: ', error.message)
+    }
+  }
+
+  React.useEffect(() => {
+    loadDrink()
+  }, [])
 
   if (drink) {
     var backstory = ''
     var content = ''
+    var drinkImage = ''
+    if (drink.imageFile) {
+      const imageFile = '/img/' + drink.imageFile
+      drinkImage = (
+        <CardMedia
+          component="img"
+          width="300"
+          image={imageFile}
+          // alt="cocktail photo"
+          alt={drink.imageFile}
+          sx={{ mb: 1, objectFit: 'contain' }}
+        />
+      )
+    }
     if (drink.backstory) {
       backstory = (
         <>
@@ -34,9 +83,11 @@ export default function DrinkPage({ drinks }) {
     content = (
       <Card sx={{ minWidth: 275, maxWidth: 400 }}>
         <CardContent>
+          {drinkImage}
           <Typography variant="h4" color="#357EC7" component="div">
             {drink.title}
           </Typography>
+
           <Typography variant="body1" component="div">
             <ul>
               {drink.components.map((item, idx) => (
@@ -54,9 +105,10 @@ export default function DrinkPage({ drinks }) {
           {backstory}
           <CardActions disableSpacing sx={{ paddingLeft: 0 }}>
             <Button
+              component={RouterLink}
+              to="/"
               sx={{ paddingLeft: 0 }}
-              size="small"
-              onClick={() => navigate(-1)}
+              size="medium"
             >
               Back to the menu
             </Button>
@@ -77,7 +129,9 @@ export default function DrinkPage({ drinks }) {
           component="div"
           sx={{ textAlign: 'center', flexGrow: 1 }}
         >
-          Irresistibull Cocktails
+          <Link component={RouterLink} to="/" underline="none" color="white">
+            Irresistibull Cocktails
+          </Link>
         </Typography>
       </AppBar>
       {content}

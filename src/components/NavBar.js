@@ -11,18 +11,12 @@ import SearchIcon from '@mui/icons-material/Search'
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined'
 import { Link as RouterLink } from 'react-router-dom'
 import Link from '@mui/material/Link'
-
-// Copied
 import Drawer from '@mui/material/Drawer'
 import List from '@mui/material/List'
 import Divider from '@mui/material/Divider'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
-import ListItemIcon from '@mui/material/ListItemIcon'
 import ListItemText from '@mui/material/ListItemText'
-import InboxIcon from '@mui/icons-material/MoveToInbox'
-import MailIcon from '@mui/icons-material/Mail'
-//End Copied
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -97,19 +91,22 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
   }
 
   const handleDrawerSearchButton = (userValue) => () => {
-    const search = drinks.filter(
-      (drink) =>
-        drink.tags
+    if (userValue == 'All Drinks') {
+      setSearchTerm('')
+      sessionStorage.setItem('searchString', '')
+      setSearchedDrinks(drinks)
+    } else {
+      const search = drinks.filter((drink) =>
+        drink.category
           .flat()
           .join(' ')
           .toLowerCase()
-          .includes(userValue.toLowerCase()) ||
-        drink.ingredients.toLowerCase().includes(userValue.toLowerCase()) ||
-        drink.title.toLowerCase().includes(userValue.toLowerCase())
-    )
-    setSearchTerm(userValue)
-    sessionStorage.setItem('searchString', userValue)
-    setSearchedDrinks(search)
+          .includes(userValue.toLowerCase())
+      )
+      setSearchTerm(userValue)
+      sessionStorage.setItem('searchString', userValue)
+      setSearchedDrinks(search)
+    }
   }
 
   const handleAshleyFavs = () => {
@@ -118,20 +115,33 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
     sessionStorage.setItem('searchString', '')
     setSearchedDrinks(search)
   }
+  const handleHouseFavs = () => {
+    const search = drinks.filter((drink) => drink.housefav == true)
+    setSearchTerm('')
+    sessionStorage.setItem('searchString', '')
+    setSearchedDrinks(search)
+  }
 
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
-        {['Martini', 'Margarita'].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton onClick={handleDrawerSearchButton(text)}>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
+        {['All Drinks', 'Martini', 'Rocks', 'Cosmo', 'Margarita'].map(
+          (text) => (
+            <ListItem key={text} disablePadding>
+              <ListItemButton onClick={handleDrawerSearchButton(text)}>
+                <ListItemText primary={text} />
+              </ListItemButton>
+            </ListItem>
+          )
+        )}
         <ListItem disablePadding>
           <ListItemButton onClick={handleAshleyFavs}>
             <ListItemText primary="Ashley's Faves 🩵" />
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={handleHouseFavs}>
+            <ListItemText primary="House Faves 💙" />
           </ListItemButton>
         </ListItem>
       </List>
