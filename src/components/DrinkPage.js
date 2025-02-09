@@ -1,5 +1,8 @@
 import React from 'react'
 import { useParams, Link as RouterLink } from 'react-router-dom'
+import ReactGA from 'react-ga4'
+import useLoadDrink from '../hooks/useLoadDrink'
+import Skeleton from '@mui/material/Skeleton'
 import Link from '@mui/material/Link'
 import Card from '@mui/material/Card'
 import Box from '@mui/material/Box'
@@ -11,63 +14,61 @@ import Button from '@mui/material/Button'
 import Typography from '@mui/material/Typography'
 import Divider from '@mui/material/Divider'
 
-export default function DrinkPage({ drinks }) {
+export default function DrinkPage() {
   const { slug } = useParams()
-  const [drink, setDrink] = React.useState('')
+  const { isLoading, error, status, message, data } = useLoadDrink(slug)
 
-  const loadDrink = () => {
-    if (drinks) {
-      setDrink(drinks.find((d) => d.slug === slug))
-    }
-    try {
-      fetch('cocktails.json', {
-        headers: {
-          'Content-Type': 'application/json',
-          Accept: 'application/json',
-        },
-      })
-        .then((response) => {
-          if (!response.ok) {
-            if (response.status === 404) {
-              // Handle 404 Not Found
-              console.error('Bar must be closed. Did not find drink.')
-              return ''
-            } else {
-              throw new Error('Network response was not ok')
-            }
-          }
-          return response.json()
-        })
-        .then((drinkData) => {
-          setDrink(drinkData.find((d) => d.slug === slug))
-        })
-    } catch (error) {
-      console.log('ERROR: ', error.message)
-    }
-  }
+  var backstory = ''
+  var subs = ''
+  var content = <Skeleton variant="rounded" width={350} height={250} />
+  var errorText =
+    'A drink by that name was not found on the Irresistibull Cocktail menu.'
 
   React.useEffect(() => {
-    loadDrink()
+    ReactGA.send({
+      hitType: 'pageview',
+      page: `/${slug}`,
+      title: slug,
+    })
   }, [])
 
-  if (drink) {
-    var backstory = ''
-    var content = ''
-    var drinkImage = ''
-    if (drink.imageFile) {
-      const imageFile = '/img/' + drink.imageFile
-      drinkImage = (
-        <CardMedia
-          component="img"
-          width="300"
-          image={imageFile}
-          // alt="cocktail photo"
-          alt={drink.imageFile}
-          sx={{ mb: 1, objectFit: 'contain' }}
-        />
-      )
+  if (error) {
+    if (message == 'Not Found') {
+      errorText = 'Error loading the cocktail menu.'
     }
-    if (drink.backstory) {
+    console.log(`ERROR: Status ${status}. ${message}`)
+    content = (
+      <Card>
+        <CardContent>
+          <Typography variant="h4" component="div">
+            {errorText}
+          </Typography>
+          <CardActions disableSpacing sx={{ paddingLeft: 0 }}>
+            <Button
+              component={RouterLink}
+              to="/"
+              sx={{ paddingLeft: 0 }}
+              size="medium"
+            >
+              Back to the menu
+            </Button>
+          </CardActions>
+        </CardContent>
+      </Card>
+    )
+  } else if (data) {
+    const imageFile = data.imageFile || '_default.jpg'
+    const drinkImage = (
+      <CardMedia
+        component="img"
+        width="300"
+        image={'img/' + imageFile}
+        alt={imageFile}
+        sx={{ mb: 1, objectFit: 'contain' }}
+      />
+    )
+
+    if (data.backstory) {
       backstory = (
         <>
           <Divider variant="middle" sx={{ mb: 2, mt: 2 }} />
@@ -75,22 +76,37 @@ export default function DrinkPage({ drinks }) {
             Drink Trivia
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {drink.backstory}
+            {data.backstory}
           </Typography>
         </>
       )
     }
+
+    if (data.subs) {
+      subs = (
+        <>
+          <Divider variant="middle" sx={{ mb: 2, mt: 2 }} />
+          <Typography variant="h6" component="div">
+            Options
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            {data.subs}
+          </Typography>
+        </>
+      )
+    }
+
     content = (
       <Card sx={{ minWidth: 275, maxWidth: 400 }}>
         <CardContent>
           {drinkImage}
           <Typography variant="h4" color="#357EC7" component="div">
-            {drink.title}
+            {data.title}
           </Typography>
 
           <Typography variant="body1" component="div">
             <ul>
-              {drink.components.map((item, idx) => (
+              {data.components.map((item, idx) => (
                 <li key={idx}>{item}</li>
               ))}
             </ul>
@@ -100,8 +116,9 @@ export default function DrinkPage({ drinks }) {
             Mix It!
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            {drink.instructions}
+            {data.instructions}
           </Typography>
+          {subs}
           {backstory}
           <CardActions disableSpacing sx={{ paddingLeft: 0 }}>
             <Button
@@ -116,8 +133,6 @@ export default function DrinkPage({ drinks }) {
         </CardContent>
       </Card>
     )
-  } else {
-    content = <Card sx={{ minWidth: 275, maxWidth: 400 }}>Drink Not Found</Card>
   }
 
   return (

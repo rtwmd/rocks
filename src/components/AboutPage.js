@@ -1,5 +1,5 @@
 import React from 'react'
-// import { useNavigate } from 'react-router-dom'
+import ReactGA from 'react-ga4'
 import Card from '@mui/material/Card'
 import Box from '@mui/material/Box'
 import AppBar from '@mui/material/AppBar'
@@ -13,7 +13,13 @@ import Link from '@mui/material/Link'
 import { Link as RouterLink } from 'react-router-dom'
 
 export default function AboutPage() {
-  //   let navigate = useNavigate()
+  React.useEffect(() => {
+    ReactGA.send({
+      hitType: 'pageview',
+      page: '/about',
+      title: 'About Page',
+    })
+  }, [])
 
   return (
     <Box sx={{ flexGrow: 1 }}>

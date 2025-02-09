@@ -1,22 +1,30 @@
 import * as React from 'react'
 import { styled, alpha } from '@mui/material/styles'
+import { sortSearch } from '../utils/sortSearch'
 import AppBar from '@mui/material/AppBar'
 import Box from '@mui/material/Box'
 import Toolbar from '@mui/material/Toolbar'
 import IconButton from '@mui/material/IconButton'
 import Typography from '@mui/material/Typography'
 import InputBase from '@mui/material/InputBase'
-import LocalBar from '@mui/icons-material/LocalBar'
+import LiquorIcon from '@mui/icons-material/Liquor'
+import MenuIcon from '@mui/icons-material/Menu'
 import SearchIcon from '@mui/icons-material/Search'
 import CancelOutlinedIcon from '@mui/icons-material/CancelOutlined'
+import WestIcon from '@mui/icons-material/West'
+import FavoriteIcon from '@mui/icons-material/Favorite'
+import HomeIcon from '@mui/icons-material/Home'
+import PetsIcon from '@mui/icons-material/Pets'
 import { Link as RouterLink } from 'react-router-dom'
 import Link from '@mui/material/Link'
+import Grid from '@mui/material/Grid2'
 import Drawer from '@mui/material/Drawer'
 import List from '@mui/material/List'
 import Divider from '@mui/material/Divider'
 import ListItem from '@mui/material/ListItem'
 import ListItemButton from '@mui/material/ListItemButton'
 import ListItemText from '@mui/material/ListItemText'
+import Breadcrumbs from '@mui/material/Breadcrumbs'
 
 const Search = styled('div')(({ theme }) => ({
   position: 'relative',
@@ -62,100 +70,96 @@ const StyledInputBase = styled(InputBase)(({ theme }) => ({
 
 export default function NavBar({ drinks, setSearchedDrinks }) {
   const [searchTerm, setSearchTerm] = React.useState(' ')
+  const [sortOrder, setSortOrder] = React.useState('')
+  const [searchType, setSearchType] = React.useState('')
   const [open, setOpen] = React.useState(false)
 
   const toggleDrawer = (newOpen) => () => {
     setOpen(newOpen)
   }
 
+  var subsetMessage = ''
+
   React.useEffect(() => {
     setSearchTerm(sessionStorage.getItem('searchString') || '')
+    setSortOrder(sessionStorage.getItem('sortOrder') || 'NEW')
+    setSearchType(sessionStorage.getItem('searchType') || 'ALL')
   }, [])
 
+  React.useEffect(() => {
+    setSearchedDrinks(sortSearch(sortOrder, searchTerm, drinks, searchType))
+  }, [sortOrder, searchTerm, searchType])
+
+  const handleSetSortOrder = (sortValue) => {
+    setSortOrder(sortValue)
+    sessionStorage.setItem('sortOrder', sortValue)
+  }
+
   const handleSearchInput = (event) => {
-    const search = drinks.filter(
-      (drink) =>
-        drink.tags
-          .flat()
-          .join(' ')
-          .toLowerCase()
-          .includes(event.target.value.toLowerCase()) ||
-        drink.ingredients
-          .toLowerCase()
-          .includes(event.target.value.toLowerCase()) ||
-        drink.title.toLowerCase().includes(event.target.value.toLowerCase())
-    )
     setSearchTerm(event.target.value)
     sessionStorage.setItem('searchString', event.target.value)
-    setSearchedDrinks(search)
   }
 
-  const handleDrawerSearchButton = (userValue) => () => {
-    if (userValue == 'All Drinks') {
-      setSearchTerm('')
-      sessionStorage.setItem('searchString', '')
-      setSearchedDrinks(drinks)
-    } else {
-      const search = drinks.filter((drink) =>
-        drink.category
-          .flat()
-          .join(' ')
-          .toLowerCase()
-          .includes(userValue.toLowerCase())
+  const handleDrawerSearchButton = (userValue) => {
+    setSearchType('ALL')
+    setSearchTerm(userValue)
+    sessionStorage.setItem('searchType', 'ALL')
+    sessionStorage.setItem('searchString', userValue)
+  }
+
+  const handleCategoryChange = (categoryType, searchValue = '') => {
+    setSearchType(categoryType)
+    setSearchTerm(searchValue)
+    sessionStorage.setItem('searchType', 'ALL')
+    sessionStorage.setItem('searchString', searchValue)
+  }
+
+  const setCheckIcon = (sortOption) => {
+    if (sortOption === sortOrder) {
+      return (
+        <IconButton edge="end" sx={{ p: 0, m: 0 }}>
+          <WestIcon fontSize="inherit" />
+        </IconButton>
       )
-      setSearchTerm(userValue)
-      sessionStorage.setItem('searchString', userValue)
-      setSearchedDrinks(search)
     }
+    return ''
   }
 
-  const handleAshleyFavs = () => {
-    const search = drinks.filter((drink) => drink.ashleyfav == true)
-    setSearchTerm('')
-    sessionStorage.setItem('searchString', '')
-    setSearchedDrinks(search)
-  }
-  const handleHouseFavs = () => {
-    const search = drinks.filter((drink) => drink.housefav == true)
-    setSearchTerm('')
-    sessionStorage.setItem('searchString', '')
-    setSearchedDrinks(search)
+  const setBreadCrumbs = () => {
+    var crumb = ''
+    if (searchType === 'ALL') {
+      return ''
+    }
+
+    if (searchType === 'ASH') {
+      crumb = "Ashley's Favorites"
+    } else if (searchType === 'HOUSE') {
+      crumb = 'House Favorites'
+    } else if (searchType === 'DOG') {
+      crumb = 'The Irresistibulls'
+    }
+
+    return (
+      <Box className="drinkDisplay">
+        <Grid key={'mainGrid'} container sx={{ ml: 2 }}>
+          <Breadcrumbs aria-label="breadcrumb">
+            <Link
+              underline="hover"
+              color="inherit"
+              style={{ cursor: 'pointer' }}
+              onClick={() => handleDrawerSearchButton('')}
+            >
+              All Drinks
+            </Link>
+            <Typography sx={{ color: 'text.primary' }}>{crumb}</Typography>
+          </Breadcrumbs>
+        </Grid>
+      </Box>
+    )
   }
 
   const DrawerList = (
-    <Box sx={{ width: 250 }} role="presentation" onClick={toggleDrawer(false)}>
-      <List>
-        {['All Drinks', 'Martini', 'Rocks', 'Cosmo', 'Margarita'].map(
-          (text) => (
-            <ListItem key={text} disablePadding>
-              <ListItemButton onClick={handleDrawerSearchButton(text)}>
-                <ListItemText primary={text} />
-              </ListItemButton>
-            </ListItem>
-          )
-        )}
-        <ListItem disablePadding>
-          <ListItemButton onClick={handleAshleyFavs}>
-            <ListItemText primary="Ashley's Faves 🩵" />
-          </ListItemButton>
-        </ListItem>
-        <ListItem disablePadding>
-          <ListItemButton onClick={handleHouseFavs}>
-            <ListItemText primary="House Faves 💙" />
-          </ListItemButton>
-        </ListItem>
-      </List>
-      <Divider />
-      <List>
-        {['Vodka', 'Gin', 'Tequila', 'Whiskey', 'Sparkling'].map((text) => (
-          <ListItem key={text} disablePadding>
-            <ListItemButton onClick={handleDrawerSearchButton(text)}>
-              <ListItemText primary={text} />
-            </ListItemButton>
-          </ListItem>
-        ))}
-      </List>
-      <Divider />
+    <Box sx={{ width: 180 }} role="presentation" onClick={toggleDrawer(false)}>
       <List>
         <ListItem disablePadding>
           <ListItemButton>
@@ -170,6 +174,77 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
           </ListItemButton>
         </ListItem>
       </List>
+      <Divider />
+      <List>
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => handleSetSortOrder('NEW')}>
+            <ListItemText primary="Newest First" />
+            {setCheckIcon('NEW')}
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => handleSetSortOrder('AZ')}>
+            <ListItemText primary="A to Z" />
+            {setCheckIcon('AZ')}
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => handleSetSortOrder('ZA')}>
+            <ListItemText primary="Z to A" />
+            {setCheckIcon('ZA')}
+          </ListItemButton>
+        </ListItem>
+        <Divider />
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => handleDrawerSearchButton('')}>
+            <ListItemText primary="All Drinks" />
+            <IconButton edge="end" sx={{ p: 0, m: 0 }} sx={{ p: 0, m: 0 }}>
+              <LiquorIcon fontSize="small" sx={{ color: 'darkgreen' }} />
+            </IconButton>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => handleCategoryChange('ASH')}>
+            <ListItemText primary="Ashley's Faves" />
+            <IconButton edge="end" sx={{ p: 0, m: 0 }}>
+              <FavoriteIcon fontSize="small" sx={{ color: 'pink' }} />
+            </IconButton>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => handleCategoryChange('DOG')}>
+            <ListItemText primary="Irresistibulls" />
+            <IconButton edge="end" sx={{ p: 0, m: 0 }}>
+              <PetsIcon fontSize="small" sx={{ color: 'brown' }} />
+            </IconButton>
+          </ListItemButton>
+        </ListItem>
+        <ListItem disablePadding>
+          <ListItemButton onClick={() => handleCategoryChange('HOUSE')}>
+            <ListItemText primary="House Faves" />
+            <IconButton edge="end" sx={{ p: 0, m: 0 }}>
+              <HomeIcon fontSize="small" sx={{ color: '#357EC7' }} />
+            </IconButton>
+          </ListItemButton>
+        </ListItem>
+        {['Martini', 'Rocks', 'Cosmo', 'Margarita'].map((text) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton onClick={() => handleDrawerSearchButton(text)}>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
+      <Divider />
+      <List>
+        {['Vodka', 'Gin', 'Tequila', 'Whiskey', 'Sparkling'].map((text) => (
+          <ListItem key={text} disablePadding>
+            <ListItemButton onClick={() => handleDrawerSearchButton(text)}>
+              <ListItemText primary={text} />
+            </ListItemButton>
+          </ListItem>
+        ))}
+      </List>
     </Box>
   )
 
@@ -181,11 +256,11 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
             size="large"
             edge="start"
             color="inherit"
-            aria-label="martini glass"
+            aria-label="Open menu"
             sx={{ mr: 2 }}
             onClick={toggleDrawer(true)}
           >
-            <LocalBar />
+            <MenuIcon />
           </IconButton>
           <Drawer open={open} onClose={toggleDrawer(false)}>
             {DrawerList}
@@ -215,12 +290,13 @@ export default function NavBar({ drinks, setSearchedDrinks }) {
             color="inherit"
             aria-label="clear search"
             sx={{ ml: 1 }}
-            onClick={handleDrawerSearchButton('')}
+            onClick={() => handleDrawerSearchButton('')}
           >
             <CancelOutlinedIcon />
           </IconButton>
         </Toolbar>
       </AppBar>
+      {setBreadCrumbs()}
     </Box>
   )
 }
