@@ -19,6 +19,9 @@
 .env.production.local
 .htaccess
 
+# old code
+/oldComponents
+
 cocktails.json
 
 npm-debug.log*

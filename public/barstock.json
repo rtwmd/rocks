@@ -1,0 +1,668 @@
+[
+  {
+    "id": "KetelOne",
+    "shortname": "Ketel One",
+    "longname": "Ketel One vodka",
+    "url": "https://www.ketelone.com/vodkas/ketel-one-vodka",
+    "category": "vodka"
+  },
+  {
+    "id": "KetelCitroen",
+    "shortname": "Ketel One Citroen",
+    "longname": "Ketel One Ciroen vodka",
+    "url": "https://www.ketelone.com/vodkas/ketel-one-citroen",
+    "category": "vodka"
+  },
+  {
+    "id": "KetelOranje",
+    "shortname": "Ketel One Oranje",
+    "longname": "Ketel One Oranje vodka",
+    "url": "https://www.ketelone.com/vodkas/ketel-one-oranje",
+    "category": "vodka"
+  },
+  {
+    "id": "StGermain",
+    "shortname": "St. Germain",
+    "longname": "St. Germain elderflower liqueur",
+    "url": "https://www.stgermainliqueur.com",
+    "category": "liqueur"
+  },
+  {
+    "id": "Solerno",
+    "shortname": "Solerno",
+    "longname": "Solerno blood orange liqueur",
+    "url": "",
+    "category": "liqueur"
+  },
+  {
+    "id": "CranberryJuice",
+    "shortname": "Cranberry",
+    "longname": "Cranberry juice",
+    "url": "",
+    "category": "juice"
+  },
+  {
+    "id": "JimadorReposado",
+    "shortname": "El Jimador Reposado",
+    "longname": "El Jimador reposado tequila",
+    "url": "https://www.eljimador.com/en-us/product/reposado/",
+    "category": "tequila"
+  },
+  {
+    "id": "JimadorAnejo",
+    "shortname": "El Jimador Anejo",
+    "longname": "El Jimador anejo tequila",
+    "url": "https://www.eljimador.com/en-us/product/anejo/",
+    "category": "tequila"
+  },
+  {
+    "id": "GrandMarnier",
+    "shortname": "Grand Marnier",
+    "longname": "Grand Marnier",
+    "url": "https://www.grandmarnier.com/en-us/our-collection/cordon-rouge/",
+    "category": "liqueur"
+  },
+  {
+    "id": "LimeJuice",
+    "shortname": "Lime",
+    "longname": "Fresh lime juice",
+    "url": "",
+    "category": "juice"
+  },
+  {
+    "id": "Botanist",
+    "shortname": "Botanist",
+    "longname": "Botanist gin",
+    "url": "https://www.thebotanist.com/",
+    "category": "gin"
+  },
+  {
+    "id": "EmpressIndigo",
+    "shortname": "Empress 1908 Indigo",
+    "longname": "Empress 1908 Indigo gin",
+    "url": "https://empressgin.com/spirit/indigo-gin/",
+    "category": "gin"
+  },
+  {
+    "id": "Botanist",
+    "shortname": "Botanist",
+    "longname": "Botanist gin",
+    "url": "https://www.thebotanist.com/",
+    "category": "gin"
+  },
+  {
+    "id": "LavenderBitters",
+    "shortname": "Lavender Bitters",
+    "longname": "Lavender bitters",
+    "url": "https://www.scrappysbitters.com/bitters/lavender",
+    "category": "bitters"
+  },
+  {
+    "id": "LemonRind",
+    "shortname": "Lemon",
+    "longname": "Lemon rind",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "Cognac",
+    "shortname": "Cognac",
+    "longname": "Cognac",
+    "url": "",
+    "category": "cognac"
+  },
+  {
+    "id": "LemonJuice",
+    "shortname": "Lemon",
+    "longname": "Lemon juice",
+    "url": "",
+    "category": "juice"
+  },
+  {
+    "id": "BlackBush",
+    "shortname": "Bushmills Black Bush",
+    "longname": "Bushmills Black Bush Irish whiskey",
+    "url": "https://bushmills.com/products/black-bush",
+    "category": "irish whiskey"
+  },
+  {
+    "id": "Nonino",
+    "shortname": "Amaro Nonino",
+    "longname": "Amaro Nonino",
+    "url": "https://www.grappanonino.it/en/amaro-and-liqueurs/amaro-nonino-quintessentia/",
+    "category": "amaro"
+  },
+  {
+    "id": "MaraschinoOriginale",
+    "shortname": "Maraschino Originale",
+    "longname": "Luxardo Maraschino Originale liqueur",
+    "url": "https://www.luxardo.it/liqueurs-and-distillates/maraschino-originale/",
+    "category": "liqueur"
+  },
+  {
+    "id": "OrangeBitters",
+    "shortname": "Orange Bitters",
+    "longname": "Orange bitters",
+    "url": "https://angosturabitters.com/portfolio/orange-bitters/",
+    "category": "bitters"
+  },
+  {
+    "id": "CirocSummer",
+    "shortname": "Ciroc Summer Citrus",
+    "longname": "Ciroc Summer Citrus vodka",
+    "url": "https://www.ciroc.com/en-us/vodkas/citrus",
+    "category": "vodka"
+  },
+  {
+    "id": "Cointreau",
+    "shortname": "Cointreau",
+    "longname": "Cointreau",
+    "url": "https://www.cointreau.com/us/en/products/cointreau",
+    "category": "liqueur"
+  },
+  {
+    "id": "SparklingBrut",
+    "shortname": "Sparkling Brut",
+    "longname": "Sparkling brut wine",
+    "url": "",
+    "category": "sparkling"
+  },
+  {
+    "id": "Simple",
+    "shortname": "Simple",
+    "longname": "Simple syrup",
+    "url": "https://www.masterofmixes.com/products/simple-syrup",
+    "category": "mixer"
+  },
+  {
+    "id": "LilletBlanc",
+    "shortname": "Lillet Blanc",
+    "longname": "Lillet Blanc",
+    "url": "https://www.lillet.com/en-us/collection/lillet-blanc/",
+    "category": "aperitif"
+  },
+  {
+    "id": "Absinthe",
+    "shortname": "Absinthe",
+    "longname": "St. George Absinthe Verte",
+    "url": "https://stgeorgespirits.com/spirits/absinthe-verte",
+    "category": "absinthe"
+  },
+  {
+    "id": "Bulldog",
+    "shortname": "Bulldog Gin",
+    "longname": "Bulldog gin",
+    "url": "https://www.bulldoggin.com",
+    "category": "gin"
+  },
+  {
+    "id": "SparklingRose",
+    "shortname": "Sparkling Rose",
+    "longname": "Sparkling rose wine",
+    "url": "",
+    "category": "sparkling"
+  },
+  {
+    "id": "Aperol",
+    "shortname": "Aperol",
+    "longname": "Aperol",
+    "url": "https://www.aperol.com",
+    "category": "aperitif"
+  },
+  {
+    "id": "Agavero",
+    "shortname": "Agavero",
+    "longname": "Agavero",
+    "url": "https://agavero.com/products/original/",
+    "category": "liqueur"
+  },
+  {
+    "id": "TripleSec",
+    "shortname": "Triple Sec",
+    "longname": "Triple Sec",
+    "url": "",
+    "category": "mixer"
+  },
+  {
+    "id": "Hpnotiq",
+    "shortname": "Hpnotiq",
+    "longname": "Hpnotiq",
+    "url": "https://www.hpnotiq.com",
+    "category": "liqueur"
+  },
+  {
+    "id": "CirocMango",
+    "shortname": "Ciroc Mango",
+    "longname": "Ciroc mango vodka",
+    "url": "https://www.ciroc.com/en-us/vodkas/mango-vodka",
+    "category": "vodka"
+  },
+  {
+    "id": "CirocCoconut",
+    "shortname": "Ciroc Coconut",
+    "longname": "Ciroc coconut vodka",
+    "url": "https://www.ciroc.com/en-us/vodkas/coconut",
+    "category": "vodka"
+  },
+  {
+    "id": "CirocPeach",
+    "shortname": "Ciroc Peach",
+    "longname": "Ciroc peach vodka",
+    "url": "https://www.ciroc.com/en-us/vodkas/peach",
+    "category": "vodka"
+  },
+  {
+    "id": "Ciroc",
+    "shortname": "Ciroc",
+    "longname": "Ciroc vodka",
+    "url": "https://www.ciroc.com/en-us/vodkas/ultra-premium-vodka",
+    "category": "vodka"
+  },
+  {
+    "id": "TanquerayRangpur",
+    "shortname": "Tanqueray Rangpur",
+    "longname": "Tanqueray Rangpur lime gin",
+    "url": "https://www.tanqueray.com/en-us/tanqueray-rangpur-lime",
+    "category": "gin"
+  },
+  {
+    "id": "LightPineappleJuice",
+    "shortname": "Pineapple Juice",
+    "longname": "Dole light pineapple juice",
+    "url": "https://www.dolesunshine.com/us/en/products/pineapple-light-juice-drink/",
+    "category": "juice"
+  },
+  {
+    "id": "Pimms",
+    "shortname": "Pimms",
+    "longname": "Pimms",
+    "url": "https://www.diageobaracademy.com/en-us/home/our-brands/pimm-s",
+    "category": "aperitif"
+  },
+  {
+    "id": "Honey",
+    "shortname": "Honey",
+    "longname": "Honey",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "Cappelletti",
+    "shortname": "Cappelletti",
+    "longname": "Cappelletti",
+    "url": "https://alpenz.com/product-cappelletti_aperitivo.html",
+    "category": "aperitif"
+  },
+  {
+    "id": "RoseWine",
+    "shortname": "Rose Wine",
+    "longname": "Rose wine",
+    "url": "",
+    "category": "wine"
+  },
+  {
+    "id": "MalibuMango",
+    "shortname": "Malibu Mango",
+    "longname": "Malibu mango rum",
+    "url": "https://www.malibudrinks.com/en-us/products/malibu-mango/",
+    "category": "rum"
+  },
+  {
+    "id": "BlueCuracao",
+    "shortname": "Blue Curacao",
+    "longname": "Blue Curacao",
+    "url": "https://www.dekuyperusa.com/flavor/dekuyper-blue-curacao",
+    "category": "mixer"
+  },
+  {
+    "id": "PineappleJuice",
+    "shortname": "Pineapple Juice",
+    "longname": "Pineapple juice",
+    "url": "",
+    "category": "juice"
+  },
+  {
+    "id": "Sprite",
+    "shortname": "Sprite",
+    "longname": "Sprite",
+    "url": "",
+    "category": "mixer"
+  },
+  {
+    "id": "MathildeCassis",
+    "shortname": "Mathilde Cassis",
+    "longname": "Mathilde Cassis liqueur",
+    "url": "https://maisonferrand.com/en/content/mathilde-liqueur/",
+    "category": "liqueur"
+  },
+  {
+    "id": "BasilHayden",
+    "shortname": "Basil Hayden",
+    "longname": "Basil Hayden bourbon",
+    "url": "https://www.basilhaydenbourbon.com/whiskies/basil-hayden-kentucky-straight-bourbon",
+    "category": "whiskey"
+  },
+  {
+    "id": "CitadelJardin",
+    "shortname": "Citadel Jardin D'Ete",
+    "longname": "Citadel Jardin D'Ete gin",
+    "url": "https://citadellegin.com/en/gin/jardin-dete/",
+    "category": "gin"
+  },
+  {
+    "id": "SpicedCherryBitters",
+    "shortname": "Spiced Cherry Bitters",
+    "longname": "Woodford spiced cherry bitters",
+    "url": "",
+    "category": "bitters"
+  },
+  {
+    "id": "SweetVermouth",
+    "shortname": "Sweet Vermouth",
+    "longname": "Sweet vermouth",
+    "url": "",
+    "category": "aperitif"
+  },
+  {
+    "id": "FourRosesSingle",
+    "shortname": "Four Roses Single Barrel",
+    "longname": "Four Roses Single Barrel bourbon",
+    "url": "https://www.fourrosesbourbon.com/bourbon/single-barrel",
+    "category": "whiskey"
+  },
+  {
+    "id": "DarkCremeCacao",
+    "shortname": "Creme de Cacao",
+    "longname": "Dark creme de cacao",
+    "url": "https://www.dekuyperusa.com/flavor/dekuyper-creme-de-cacao-dark",
+    "category": "liqueur"
+  },
+  {
+    "id": "CherryJuice",
+    "shortname": "Cherry Juice",
+    "longname": "Cherry juice",
+    "url": "",
+    "category": "juice"
+  },
+  {
+    "id": "ChocolateBitters",
+    "shortname": "Chocolate Bitters",
+    "longname": "Chocolate bitters",
+    "url": "",
+    "category": "bitters"
+  },
+  {
+    "id": "Montenegro",
+    "shortname": "Amaro Montenegro",
+    "longname": "Amaro Montenegro",
+    "url": "https://www.amaromontenegro.com",
+    "category": "amaro"
+  },
+  {
+    "id": "WoodfordReserve",
+    "shortname": "Woodford Reserve",
+    "longname": "Woodford Reserve bourbon",
+    "url": "https://www.woodfordreserve.com",
+    "category": "whiskey"
+  },
+  {
+    "id": "Makers",
+    "shortname": "Maker's Mark",
+    "longname": "Maker's Mark bourbon",
+    "url": "https://www.makersmark.com",
+    "category": ""
+  },
+  {
+    "id": "MaestroAnejo",
+    "shortname": "Maestro Dobel Anejo",
+    "longname": "Maestro Dobel anejo tequila",
+    "url": "https://maestrodobel.com/anejo/",
+    "category": "tequila"
+  },
+  {
+    "id": "CinnamonWhiskey",
+    "shortname": "Cinnamon Whiskey",
+    "longname": "Cinnamon whiskey",
+    "url": "",
+    "category": "whiskey"
+  },
+  {
+    "id": "Grenadine",
+    "shortname": "Grenadine",
+    "longname": "Grenadine",
+    "url": "",
+    "category": "mixer"
+  },
+  {
+    "id": "Limoncello",
+    "shortname": "Limoncello",
+    "longname": "Limoncello",
+    "url": "https://www.sazerac.com/our-brands/sazerac-brands/caravella.html",
+    "category": "liqueur"
+  },
+  {
+    "id": "Agave",
+    "shortname": "Agave",
+    "longname": "Agave nectar",
+    "url": "",
+    "category": "mixer"
+  },
+  {
+    "id": "FourRoses",
+    "shortname": "Four Roses",
+    "longname": "Four Roses bourbon",
+    "url": "https://www.fourrosesbourbon.com/bourbon/four-roses-bourbon",
+    "category": "bourbon"
+  },
+  {
+    "id": "TanqueraySevilla",
+    "shortname": "Tanqueray Sevilla",
+    "longname": "Tanqueray Sevilla gin",
+    "url": "https://www.tanqueray.com/en-us/tanqueray-sevilla-orange",
+    "category": "gin"
+  },
+  {
+    "id": "CokeZero",
+    "shortname": "Coke Zero",
+    "longname": "Coca Cola Zero",
+    "url": "",
+    "category": "mixer"
+  },
+  {
+    "id": "ClubSoda",
+    "shortname": "Club",
+    "longname": "Club soda",
+    "url": "",
+    "category": "mixer"
+  },
+  {
+    "id": "YellowChartreuse",
+    "shortname": "Yellow Chartreuse",
+    "longname": "Yellow Chartreuse",
+    "url": "https://www.chartreuse.fr/en/produit/yellow-chartreuse/",
+    "category": "liqueur"
+  },
+  {
+    "id": "HoneyBubbles",
+    "shortname": "Honey Bubbles",
+    "longname": "Honey Bubbles sparkling moscato",
+    "url": "https://www.honeybubbleswine.com/",
+    "category": "sparkling"
+  },
+  {
+    "id": "GrapefruitJuice",
+    "shortname": "Grapefruit Juice",
+    "longname": "Grapefruit juice",
+    "url": "",
+    "category": "juice"
+  },
+  {
+    "id": "OldForesterBourbon",
+    "shortname": "Old Forester Bourbon",
+    "longname": "Old Forester Prohibition Style bourbon",
+    "url": "https://www.oldforester.com/products/old-forester-1920-style-prohibition-whisky/",
+    "category": "bourbon"
+  },
+  {
+    "id": "HeeringCherry",
+    "shortname": "Heering",
+    "longname": "Heering cherry liqueur",
+    "url": "https://www.heering.com",
+    "category": "liqueur"
+  },
+  {
+    "id": "DomainCanton",
+    "shortname": "Domain de Canton",
+    "longname": "Domain de Canton ginger liqueur",
+    "url": "https://domainedecanton.com",
+    "category": "liqueur"
+  },
+  {
+    "id": "Averna",
+    "shortname": "Averna",
+    "longname": "Averna Amaro Siciliano",
+    "url": "https://www.amaroaverna.com",
+    "category": "amaro"
+  },
+  {
+    "id": "HornitosBlack",
+    "shortname": "Hornitos Black Barrel",
+    "longname": "Hornitos Black Barrel anejo tequila",
+    "url": "https://www.hornitostequila.com/tequilas/black-barrel",
+    "category": "tequila"
+  },
+  {
+    "id": "Serrano",
+    "shortname": "Serrano",
+    "longname": "Serrano pepper",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "Cilantro",
+    "shortname": "Cilantro",
+    "longname": "Fresh cilantro",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "Blackberry",
+    "shortname": "Blackberry",
+    "longname": "Fresh blackberries",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "BombaySapphire",
+    "shortname": "Bombay Sapphire",
+    "longname": "Bombay Sapphire gin",
+    "url": "https://www.bombaysapphire.com/",
+    "category": "gin"
+  },
+  {
+    "id": "Tomolive",
+    "shortname": "Tomolive",
+    "longname": "Old South Tomolives",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "Italicus",
+    "shortname": "Italicus",
+    "longname": "Italicus",
+    "url": "https://rosolioitalicus.com",
+    "category": "liqueur"
+  },
+  {
+    "id": "CremedeViolette",
+    "shortname": "Creme de Violette",
+    "longname": "Creme de Violette",
+    "url": "https://www.giffard.com/en/cremes-de-fruits/498-violet-liqueur-creme-de-violette.html",
+    "category": "liqueur"
+  },
+  {
+    "id": "CocchiAmericano",
+    "shortname": "Cocchi Americano",
+    "longname": "Cocchi Americano",
+    "url": "https://www.cocchi.it/en/wines/americano/",
+    "category": "liqueur"
+  },
+  {
+    "id": "OldRaj",
+    "shortname": "Old Raj",
+    "longname": "Old Raj gin (blue label)",
+    "url": "https://www.cadenhead.scot/our-spirits/cadenheads-gin/",
+    "category": "gin"
+  },
+  {
+    "id": "StGeorgeValley",
+    "shortname": "St. George Valley",
+    "longname": "St. George Valley gin",
+    "url": "https://stgeorgespirits.com/spirits/valley-gin",
+    "category": "gin"
+  },
+  {
+    "id": "LavenderSimple",
+    "shortname": "Lavender Simple",
+    "longname": "Lavender simple syrup",
+    "url": "https://collinschicago.com/products/6700",
+    "category": "mixer"
+  },
+  {
+    "id": "LavenderSugar",
+    "shortname": "",
+    "longname": "Lavender sugar",
+    "url": "https://www.salttable.com/product/lavender-sugar/",
+    "category": "other"
+  },
+  {
+    "id": "OliveBrine",
+    "shortname": "Olive brine",
+    "longname": "Olive brine",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "Worcestershire",
+    "shortname": "Worcestershire",
+    "longname": "Worcestershire sauce",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "Horseradish",
+    "shortname": "Horseradish",
+    "longname": "Prepared orseradish",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "NiceSpicy",
+    "shortname": "Nice 'N Spicy",
+    "longname": "Salt Table Nice 'N Spicy",
+    "url": "https://www.salttable.com/product/new-nice-n-spicy/",
+    "category": "other"
+  },
+  {
+    "id": "Tabasco",
+    "shortname": "Tabasco",
+    "longname": "Tabasco sauce",
+    "url": "",
+    "category": "other"
+  },
+  {
+    "id": "TomatoJuice",
+    "shortname": "Tomato Juice",
+    "longname": "Campbell's tomato juice",
+    "url": "",
+    "category": "juice"
+  },
+  {
+    "id": "",
+    "shortname": "",
+    "longname": "",
+    "url": "",
+    "category": ""
+  }
+]
+

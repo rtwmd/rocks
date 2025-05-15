@@ -1,4 +1,6 @@
-export function sortSearch(sortOrder, searchTerm, drinks, searchType = 'ALL') {
+export function sortSearch(params) {
+  const { sortOrder, searchTerm, drinks, category, booze } = params
+
   var sortedData = []
   var filteredData = drinks
 
@@ -6,24 +8,34 @@ export function sortSearch(sortOrder, searchTerm, drinks, searchType = 'ALL') {
     return []
   }
 
-  // Filter by search type
-  if (searchType === 'ASH') {
+  // Filter by category first - defaults to all drinks
+  if (category === 'ASH') {
     filteredData = drinks.filter((drink) => drink.ashleyfav == true)
-  } else if (searchType === 'HOUSE') {
+  } else if (category === 'HOUSE') {
     filteredData = drinks.filter((drink) => drink.housefav == true)
-  } else if (searchType === 'CATEGORY') {
-    filteredData = drinks.filter((drink) =>
-      drink.category
-        .flat()
-        .join(' ')
-        .toLowerCase()
-        .includes(searchTerm.toLowerCase())
-    )
-  } else if (searchType === 'DOG') {
+  } else if (category === 'DOG') {
     filteredData = drinks.filter((drink) =>
       drink.category.flat().join(' ').toLowerCase().includes('irresistibulls')
     )
   }
+
+  // Limit by booze types - multiple if present
+
+  Object.keys(booze).forEach((key, index) => {
+    if (booze[key].variant === 'contained') {
+      filteredData = filteredData.filter(
+        (drink) =>
+          drink.ingredients
+            .toLowerCase()
+            .includes(booze[key].key.toLowerCase()) ||
+          drink.category
+            .flat()
+            .join(' ')
+            .toLowerCase()
+            .includes(booze[key].key.toLowerCase())
+      )
+    }
+  })
 
   // Apply search criteria
   const searchedData = filteredData.filter(
@@ -42,7 +54,7 @@ export function sortSearch(sortOrder, searchTerm, drinks, searchType = 'ALL') {
         .includes(searchTerm.toLowerCase())
   )
 
-  // Sort data if data present
+  // Sort data if data present - default sort is by date created
   if (searchedData) {
     if (sortOrder === 'AZ') {
       sortedData = searchedData.sort((a, b) => a.title.localeCompare(b.title))

@@ -3,13 +3,12 @@
     "id": 1,
     "title": "Grand Theft Cosmo",
     "slug": "grand-theft-cosmo",
-    "imageFile": "_default-two-martini.jpg",
-    "ingredients": "Ketel One Citroen, St. Germain, Solerno, Cranberry",
+    "imageFile": "_default-daisy-coupe.jpg",
     "components": [
-      "3 oz Ketel One Citroen vodka",
-      "1/2 oz St. Germain elderflower liqueur",
-      "1/2 oz Solerno blood orange liqueur",
-      "3/4 oz Cranberry juice"
+      { "item": "KetelCitroen", "amount": "3 oz" },
+      { "item": "StGermain", "amount": "1/2 oz" },
+      { "item": "Solerno", "amount": "1/2 oz" },
+      { "item": "CranberryJuice", "amount": "3/4 oz" }
     ],
     "instructions": "Shake all ingredients over ice and strain into martini glass. Garnish with a lemon twist or a cranberry.",
     "backstory": "Named because Ashley stole this from me after I first made it and claimed it as her own.",
@@ -24,13 +23,12 @@
     "id": 2,
     "title": "Tina-rita",
     "slug": "tina-rita",
-    "imageFile": "",
-    "ingredients": "Reposado Tequila, Grand Marnier, Agave, Lime",
+    "imageFile": "_default-daisy-coupe.jpg",
     "components": [
-      "2 1/2 oz Reposado tequila",
-      "1 1/2 oz Grand Marnier",
-      "1 1/2 oz Lime juice",
-      "1 tbsp Agave nectar"
+      { "item": "JimadorReposado", "amount": "2 1/2 oz" },
+      { "item": "GrandMarnier", "amount": "1 1/2 oz" },
+      { "item": "LimeJuice", "amount": "1 1/2 oz" },
+      { "item": "Agave", "amount": "1 tbsp" }
     ],
     "instructions": "Combine all ingredients and stir until agave dissolved. Pour over ice into salt rimmed glass.",
     "backstory": "Formerly called the Tiffany from HR-rita. The mixing of the drink was typical preceded by a call from Tina starting off with 'You are not going to believe this sh*t!'",
@@ -44,14 +42,13 @@
   {
     "id": 3,
     "title": "Passenger Seat (The Sunday Cocktail)",
-    "imageFile": "_default-whiskey.jpg",
+    "imageFile": "_default-gus-whiskey.jpg",
     "slug": "passenger-seat",
-    "ingredients": "Cognac, St. Germain, Solerno, Lemon",
     "components": [
-      "2 oz Cognac",
-      "1 oz St. Germain elderflower liqueur",
-      "1/2 oz Solerno blood orange liqueur",
-      "1/2 oz Lemon juice"
+      { "item": "Cognac", "amount": "2 oz" },
+      { "item": "StGermain", "amount": "1 oz" },
+      { "item": "Solerno", "amount": "1/2 oz" },
+      { "item": "LemonJuice", "amount": "1/2 oz" }
     ],
     "instructions": "Combine all ingredients and pour into lowball glass with a large ice cube",
     "backstory": "Modeled after the classic Sidecar cocktail. This is also known as Ashley's Sunday cocktail since she enjoys sipping this while watching the Green Bay Packers.",
@@ -67,13 +64,12 @@
     "title": "Empress Polly",
     "imageFile": "empress-polly.jpg",
     "slug": "empress-polly",
-    "ingredients": "Botanist, Empress 1908 Indigo, St. Germain, Lavender bitters",
     "components": [
-      "1 1/2 oz Botanist Gin",
-      "1 oz Empress 1908 Indigo gin",
-      "1 oz St. Germain elderflower liqueur",
-      "1 dash lavender bitters",
-      "1 peel lemon rind"
+      { "item": "Botanist", "amount": "1 1/2 oz" },
+      { "item": "EmpressIndigo", "amount": "1 oz" },
+      { "item": "StGermain", "amount": "1 oz" },
+      { "item": "LavenderBitters", "amount": "2 dashes" },
+      { "item": "LemonRind", "amount": "1 peel" }
     ],
     "instructions": "Combine ingredients (including the lemon rind) and shake over ice. Strain into a martini glass leaving out the rind. Garnish with a lemon twist.",
     "backstory": "Created for Miss Polly at the beginning of Covid for an outdoor dinner.",
@@ -88,13 +84,12 @@
     "id": 5,
     "title": "Sixty Miles From Belfast",
     "slug": "sixty-miles-from-belfast",
-    "imageFile": "_default-whiskey.jpg",
-    "ingredients": "Bushmills Black Bush, Luxardo Maraschino, Amaro Nonino, Orange bitters",
+    "imageFile": "_default-auggie-whiskey.jpg",
     "components": [
-      "1 1/2 oz Bushmills Black Bush Irish whiskey",
-      "1/2 oz Amaro Nonino",
-      "1/2 ozLuxardo Maraschino Originale liqueur",
-      "2 dashes orange bitters"
+      { "item": "BlackBush", "amount": "1 1/2" },
+      { "item": "Nonino", "amount": "1/2 oz" },
+      { "item": "MaraschinoOriginale", "amount": "1/2 oz" },
+      { "item": "OrangeBitters", "amount": "2 dashes" }
     ],
     "instructions": "Combine all ingredients and pour into lowball glass with a large ice cube. Garnish with a Luxardo cherry",
     "backstory": "Inspired by Ashley's client at the time who was in Northern Ireland. Bushmills is about 60 miles from Belfast.",
@@ -109,13 +104,12 @@
     "id": 6,
     "title": "I Want Something Orange",
     "slug": "i-want-something-orange",
-    "imageFile": "_default-two-martini.jpg",
-    "ingredients": "Ciroc Summer Citrus, Ketel One Orange, Cranberry, Cointreau",
+    "imageFile": "_default-penelope-martini.jpg",
     "components": [
-      "2 oz Ciroc Summer Citrus vodka",
-      "1 oz Ketel One Orange vodka",
-      "1 oz Cranberry juice",
-      "1/2 oz Cointreau"
+      { "item": "CirocSummer", "amount": "2 oz" },
+      { "item": "KetelOranje", "amount": "1 oz" },
+      { "item": "CranberryJuice", "amount": "1 oz" },
+      { "item": "Cointreau", "amount": "1/2 oz" }
     ],
     "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with an orange twist.",
     "backstory": "Ashley was sitting on the deck looking over the lake and said 'I want something orange.'",
@@ -131,14 +125,13 @@
     "title": "Crazy Daisy",
     "slug": "crazy-daisy",
     "imageFile": "crazy-daisy.jpg",
-    "ingredients": "Ketel One, Ketel One Citroen, Lillet Blanc, Simple, Lemon, Absinthe",
     "components": [
-      "2 oz Ketel One vodka",
-      "1 oz Ketel One Citroen vodka",
-      "1/2 oz Lillet Blanc",
-      "1/2 oz Lemon juice",
-      "1/2 oz Simple syrup",
-      "Absinthe"
+      { "item": "KetelOne", "amount": "2 oz" },
+      { "item": "KetelCitroen", "amount": "1 oz" },
+      { "item": "LilletBlanc", "amount": "1/2 oz" },
+      { "item": "LemonJuice", "amount": "1/2 oz" },
+      { "item": "Simple", "amount": "1/2 oz" },
+      { "item": "Absinthe", "amount": "1 splash" }
     ],
     "instructions": "Rinse martini glass with absinthe. Combine remaining ingredients and shake over ice. Strain into a martini glass. Garnish with a lemon twist.",
     "backstory": "Created one evening when Ashley was fed up with Daisy (one of our English bulldogs).",
@@ -153,13 +146,12 @@
     "id": 8,
     "title": "A Touch of Spring",
     "slug": "a-touch-of-spring",
-    "imageFile": "a-touch-of-spring.jpg",
-    "ingredients": "Ketel One, St. Germain, Brut Sparkling Wine, Lemon",
+    "imageFile": "_default-daisy-coupe.jpg",
     "components": [
-      "2 oz Ketel One vodka",
-      "1 1/2 oz St. Germain elderflower liqueur",
-      "1 1/2 oz Brut sparkling wine",
-      "3/4 oz Lemon juice"
+      { "item": "KetelOne", "amount": "2 oz" },
+      { "item": "StGermain", "amount": "1 1/2 oz" },
+      { "item": "SparklingBrut", "amount": "1 1/2 oz" },
+      { "item": "LemonJuice", "amount": "3/4 oz" }
     ],
     "instructions": "Pour sparkling wine into a coupe glass. Combine remaining ingredients and shake over ice. Strain into the coupe glass with the wine. Garnish with a lemon twist,",
     "backstory": "A cocktail for an early Spring day. Photo credit to Tiffany.",
@@ -181,12 +173,11 @@
     "title": "The Everly",
     "slug": "the-everly",
     "imageFile": "the-everly.jpg",
-    "ingredients": "Empress 1908 Indigo, St. Germain, Cointreau, Brut Sparkling Wine",
     "components": [
-      "2 oz Empress 1908 Indigo gin",
-      "1/2 oz St. Germain elderflower liqueur",
-      "1/2 oz Cointreau",
-      "1 1/2 oz Brut sparkling wine"
+      { "item": "EmpressIndigo", "amount": "2 oz" },
+      { "item": "StGermain", "amount": "1/2 oz" },
+      { "item": "Cointreau", "amount": "1/2 oz" },
+      { "item": "SparklingBrut", "amount": "1 1/2 oz" }
     ],
     "instructions": "Combine first three ingredients into a shaker with ice and stir. Strain into a martini glass. Top with the sparkling wine. Garnish with a lemon twist.",
     "backstory": "Inspired by the birth of the beautiful Everly on 11-15-2022. A cocktail as elegant and beautiful as she.",
@@ -201,13 +192,12 @@
     "id": 10,
     "title": "Dog Park",
     "slug": "dog-park",
-    "imageFile": "",
-    "ingredients": "Bulldog gin, Sparkling Rose, Lemon, Simple",
+    "imageFile": "_default-penelope-martini.jpg",
     "components": [
-      "3 oz Bulldog gin",
-      "1 1/2 Sparkling rose wine",
-      "1 oz Lemon juice",
-      "1/2 oz Simple syrup"
+      { "item": "Bulldog", "amount": "3 oz" },
+      { "item": "SparklingRose", "amount": "1 1/2 oz" },
+      { "item": "LemonJuice", "amount": "1/2 oz" },
+      { "item": "Simple", "amount": "1/2 oz" }
     ],
     "instructions": "Combine gin, lemon juice, and simple syrup into a shaker with ice and stir. Strain into a coupe glass. Top with the sparkling wine. Garnish with a lemon twist.",
     "backstory": "Created for Ashley after coming back from a trip to the dog park with Penelope (one of our English bulldogs).",
@@ -222,13 +212,13 @@
     "id": 11,
     "title": "Running Off With The Princess",
     "slug": "running-off-with-the-princess",
-    "imageFile": "",
+    "imageFile": "_default-penelope-martini.jpg",
     "ingredients": "Empress 1908 Elderflower Rose, St. Germain, Solerno, Cranberry",
     "components": [
-      "2 oz Empress 1908 Elderflower Rose gin",
-      "1/2 oz St. Germain elderflower liqueur",
-      "1/2 oz Solerno blood orange liqueur",
-      "1/2 Cranberry juice"
+      { "item": "EmpressIndigo", "amount": "2 oz" },
+      { "item": "StGermain", "amount": "1/2 oz" },
+      { "item": "Solerno", "amount": "1/2 oz" },
+      { "item": "CranberryJuice", "amount": "1/2 oz" }
     ],
     "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with an orange twist.",
     "backstory": "Ashley requested something similar to a Grand Theft Cosmo...but different. ",
@@ -243,13 +233,13 @@
     "id": 12,
     "title": "La Marguerite",
     "slug": "la-marguerite",
-    "imageFile": "_default-champagne.jpg",
+    "imageFile": "_default-captain-champagne.jpg",
     "ingredients": "Reposado Tequila, Grand Marnier, Lime, Brut Sparkling Wine",
     "components": [
-      "2 oz Reposado tequila",
-      "1/2 oz Grand Marnier",
-      "3/4 oz Lime juice",
-      "Brut sparkling wine"
+      { "item": "JimadorReposado", "amount": "2 oz" },
+      { "item": "GrandMarnier", "amount": "1/2 oz" },
+      { "item": "LimeJuice", "amount": "3/4 oz" },
+      { "item": "SparklingBrut", "amount": "" }
     ],
     "instructions": "Shake first three ingredients over ice and strain into champagne flute. Top with sparkling wine.",
     "backstory": "Ashley's creation. Margarita meets French 75.",
@@ -264,18 +254,18 @@
     "id": 13,
     "title": "South Of The Border Flyover",
     "slug": "south-of-the-border-flyover",
-    "imageFile": "_default-whiskey.jpg",
+    "imageFile": "_default-gus-whiskey.jpg",
     "ingredients": "Anejo Tequila, Aperol, Agavero, Lime",
     "components": [
-      "2 oz Anejo tequila",
-      "3/4 oz Aperol",
-      "3/4 oz Agavero agave liqueur",
-      "3/4 oz Lime juice"
+      { "item": "JimadorAnejo", "amount": "2 oz" },
+      { "item": "Aperol", "amount": "3/4 oz" },
+      { "item": "Agavero", "amount": "3/4 oz" },
+      { "item": "LimeJuice", "amount": "3/4 oz" }
     ],
     "instructions": "Mix together and serve in lowball glass with a large ice cube. Garnish with an orange twist.",
     "backstory": "Ashley asked for a margarita-esque cocktail to sip while watching Super Bowl LVII. Inspired by the classic Paper Plane cocktail.",
     "subs": "",
-    "tags": ["plane", "tequila", "lowball"],
+    "tags": ["plane", "tequila", "lowball", "super bowl", "paper"],
     "created": "2023-02-12",
     "category": ["rocks", "tequila"],
     "ashleyfav": 0,
@@ -288,10 +278,10 @@
     "imageFile": "blissful-oblivion.jpg",
     "ingredients": "Hpnotiq, Tanqueray Rangpur, Absolut Mango, Triple Sec",
     "components": [
-      "1 1/2 oz Hpnotiq liqueur",
-      "3/4 oz Tanqueray Rangpur gin",
-      "3/4 oz Ciroc Mango vodka",
-      "3/4 oz Triple Sec"
+      { "item": "Hpnotiq", "amount": "1 1/2 oz" },
+      { "item": "TanquerayRangpur", "amount": "3/4 oz" },
+      { "item": "CirocMango", "amount": "3/4 oz" },
+      { "item": "TripleSec", "amount": "3/4 oz" }
     ],
     "instructions": "Combine ingredients and shake over ice. Strain into a coupe glass.",
     "backstory": "Inspired by Miss Polly’s request for an after dinner fireside cocktail.",
@@ -304,18 +294,16 @@
   },
   {
     "id": 15,
-    "title": "The Polly-Colada",
-    "slug": "the-polly-colada",
-    "imageFile": "_default-two-martini.jpg",
-    "ingredients": "Ciroc Coconut, Ciroc, Pineapple Juice",
+    "title": "Polly-Colada",
+    "slug": "polly-colada",
+    "imageFile": "_default-daisy-coupe.jpg",
     "components": [
-      "1 oz Ciroc coconut vodka",
-      "1 oz Ciroc vodka",
-      "2 oz Light pineapple juice",
-      "1 oz Skim milk (optional)"
+      { "item": "CirocCoconut", "amount": "1 oz" },
+      { "item": "Ciroc", "amount": "1 oz" },
+      { "item": "LightPineappleJuice", "amount": "2 oz" }
     ],
-    "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Garnish with a pineapple wedge. Alternatively, can be served in a hurricane glass over ice with a straw.",
-    "backstory": "Created for Polly who loves pina coladas, but did not want the extra calories. Add the milk to give the classic pina colada look.",
+    "instructions": "Combine ingredients and shake over ice. Strain into a martini glass. Optionally add 1 oz of skim milk. Garnish with a pineapple wedge. Alternatively, can be served in a hurricane glass over ice with a straw.",
+    "backstory": "Created for Polly who loves pina coladas, but did not want the extra calories. Adding the milk gives the drink a classic pina colada flare.",
     "subs": "",
     "tags": ["martini", "vodka", "island", "milk", "island"],
     "created": "2025-01-03",
@@ -327,15 +315,14 @@
     "id": 16,
     "title": "Gus Gus",
     "slug": "gus-gus",
-    "imageFile": "",
-    "ingredients": "Bulldog gin, Pimms, Lime, Honey",
+    "imageFile": "_default-gus-whiskey.jpg",
     "components": [
-      "2 1/2 oz Bulldog gin",
-      "1 oz Pimms",
-      "1/2 oz Lime juice",
-      "1 tbsp Honey"
+      { "item": "Bulldog", "amount": "2 1/2 oz" },
+      { "item": "Pimms", "amount": "1 oz" },
+      { "item": "LimeJuice", "amount": "1/2 oz" },
+      { "item": "Honey", "amount": "1 tbsp" }
     ],
-    "instructions": "Combine ingredients in a shaker and stir until honey is completely dissolved. Pour into lowball glass over ice. Garnish with lime twist or honey stick.",
+    "instructions": "Combine first three ingredients in a shaker and then add the honey. Stir until honey is completely dissolved. Pour into lowball glass over ice. Garnish with lime twist or honey stick.",
     "backstory": "Honoring Gus' addition to the Irresistibulls. A little sweet and a little mischievous.",
     "subs": "",
     "tags": ["irresistibulls", "english", "gin"],
@@ -348,14 +335,13 @@
     "id": 17,
     "title": "Five Star Recruit Spritz",
     "slug": "five-star-recruit-spritz",
-    "imageFile": "_default-champagne.jpg",
-    "ingredients": "Bulldog gin, Cappelletti, Brut Sparkling Wine, Lemon, Simple",
+    "imageFile": "_default-daisy-coupe.jpg",
     "components": [
-      "2 oz Bulldog gin",
-      "1/2 oz Cappelletti",
-      "1/2 oz Lemon juice",
-      "1/2 oz Simple syrup",
-      "3-4 oz Brut Sparkling Wine"
+      { "item": "Bulldog", "amount": "2 oz" },
+      { "item": "Cappelletti", "amount": "1/2 oz" },
+      { "item": "LemonJuice", "amount": "1/2 oz" },
+      { "item": "Simple", "amount": "1/2 oz" },
+      { "item": "SparklingBrut", "amount": "3-4 oz" }
     ],
     "instructions": "Combine ingredients in a shaker over ice and stir. Pour into large wine glass and top with the sparkling wine. Add ice. Garnish with lemon wheel.",
     "backstory": "Named on Daisy’s gotcha day has a new five-star recruit to the Irresistibulls bulldog team.",
@@ -370,13 +356,12 @@
     "id": 18,
     "title": "Happily Ever After",
     "slug": "happily-ever-after",
-    "imageFile": "happily-ever-after.jpg",
-    "ingredients": "Rose wine, St. Germain, Cointreau, Cranberry",
+    "imageFile": "_default-penelope-martini.jpg",
     "components": [
-      "3 oz Rose wine",
-      "1 oz St. Germain elderflower liqueur",
-      "1/2 oz Cointreau",
-      "1 oz Cranberry juice"
+      { "item": "RoseWine", "amount": "3 oz" },
+      { "item": "StGermain", "amount": "1 oz" },
+      { "item": "Cointreau", "amount": "1/2 oz" },
+      { "item": "CranberryJuice", "amount": "1 oz" }
     ],
     "instructions": "Can be shaken and strained into a martini glass or served over ice in a lowball glass. ",
     "backstory": "Created for Tiffany and Grant’s wedding reception. Grant recommends a vodka floater.",
@@ -391,13 +376,13 @@
     "id": 19,
     "title": "Blue Pontoon",
     "slug": "blue-pontoon",
-    "imageFile": "_default-three.jpg",
+    "imageFile": "_default-gus-gnt.jpg",
     "ingredients": "Malibu Mango, Blue Curacao, Pineapple, Sprite",
     "components": [
-      "2 oz Malibu mango rum",
-      "1/2 oz Blue Curacao",
-      "2 oz Pineapple juice",
-      "3 oz Sprite"
+      { "item": "MalibuMango", "amount": "2 oz" },
+      { "item": "BlueCuracao", "amount": "1/2 oz" },
+      { "item": "PineappleJuice", "amount": "2 oz" },
+      { "item": "Sprite", "amount": "3 oz" }
     ],
     "instructions": "Pour into a hurricane glass and top with ice. Garnish with an orange wheel. Add a straw.",
     "backstory": "Created for Sterling's 21st birthday pontoon booze cruise.",
@@ -413,12 +398,11 @@
     "title": "The Auggie",
     "slug": "the-auggie",
     "imageFile": "the-auggie.jpg",
-    "ingredients": "Citadel Jardin D'Ete, St. Germain, Cassis, Lemon",
     "components": [
-      "3 oz Citadel Jardin D'Ete gin",
-      "3/4 oz St. Germain elderflower liqueur",
-      "1/4 oz Mathilde Cassis liqueur",
-      "3/4 oz Lemon juice"
+      { "item": "CitadelJardin", "amount": "3 oz" },
+      { "item": "StGermain", "amount": "3/4 oz" },
+      { "item": "MathildeCassis", "amount": "1/4 oz" },
+      { "item": "LemonJuice", "amount": "3/4 oz" }
     ],
     "instructions": "Combine ingredients in a shaker over ice and stir. Strain into a martini glass. Garnish with a lemon twist.",
     "backstory": "Created for Auggie, aka Auggie the Dauggie, aka Ron. One of the OG Irresistibulls.",
@@ -439,13 +423,12 @@
     "id": 21,
     "title": "Barrie Manhattan",
     "slug": "barrie-manhattan",
-    "imageFile": "_default-whiskey.jpg",
-    "ingredients": "Basil Hayden, Amaro Nonino, Sweet Vermouth, Cherry Bitters",
+    "imageFile": "_default-auggie-whiskey.jpg",
     "components": [
-      "2 oz Basil Hayden's bourbon",
-      "1/2 oz Amaro Nonino",
-      "1/2 oz Sweet vermouth",
-      "3 dashes Woodford spiced cherry bitters"
+      { "item": "BasilHayden", "amount": "2 oz" },
+      { "item": "Nonino", "amount": "1/2 oz" },
+      { "item": "SweetVermouth", "amount": "1/2 oz" },
+      { "item": "SpicedCherryBitters", "amount": "3 dashes" }
     ],
     "instructions": "Combine ingredients in a shaker over ice and stir. Strain into a martini glass. Garnish with a Luxardo cherry.",
     "backstory": "Created by Barrie. She is the ultimate Manhattan mixologist. We miss seeing you Barrie!",
@@ -460,14 +443,13 @@
     "id": 22,
     "title": "Black Forest Manhattan",
     "slug": "black-forest-manhattan",
-    "imageFile": "_default-whiskey.jpg",
-    "ingredients": "Four Roses, Creme de Cacao, Cherry, Bitters",
+    "imageFile": "_default-bruiser.jpg",
     "components": [
-      "2 oz Four Roses single batch bourbon",
-      "3/4 oz Dark creme de cacao",
-      "3/4 oz Cherry juice",
-      "2 dashes Cherry bitters",
-      "2 dashes Chocolate bitters"
+      { "item": "FourRosesSingle", "amount": "2 oz" },
+      { "item": "DarkCremeCacao", "amount": "3/4 oz" },
+      { "item": "CherryJuice", "amount": "3/4 oz" },
+      { "item": "SpicedCherryBitters", "amount": "2 dashes" },
+      { "item": "ChocolateBitters", "amount": "2 dashes" }
     ],
     "instructions": "Combine ingredients and pour into lowball glass over large ice cube. Garnish with Luxardo cherry.",
     "backstory": "An after dinner dessert style Manhattan.",
@@ -483,23 +465,15 @@
     "title": "Distinguished Gentleman",
     "slug": "distinguished-gentleman",
     "imageFile": "distinguished-gentleman.jpg",
-    "ingredients": "Basil Hayden, Grand Marnier, Amaro Montenegro",
     "components": [
-      "3 oz Basil Hayden's bourbon",
-      "1 oz Grand Marnier",
-      "1/2 oz Amaro Montenegro"
+      { "item": "BasilHayden", "amount": "3 oz" },
+      { "item": "GrandMarnier", "amount": "1 oz" },
+      { "item": "Montenegro", "amount": "1/2 oz" }
     ],
     "instructions": "Combine ingredients in shaker over ice. Strain into martini glass. Garnish with Luxardo cherry.",
-    "backstory": "Created in honor of big Bruiser.",
+    "backstory": "Created in honor of Big Bruiser.",
     "subs": "",
-    "tags": [
-      "bruiser",
-      "irresistibulls",
-      "martini",
-      "bourbon",
-      "whiskey",
-      "dog"
-    ],
+    "tags": ["bruiser", "irresistibulls", "bourbon", "whiskey", "dog"],
     "created": "2024-02-23",
     "category": ["whiskey", "manhattan", "irresistibulls"],
     "ashleyfav": 0,
@@ -509,13 +483,13 @@
     "id": 24,
     "title": "If Wisconsin Created The Manhattan",
     "slug": "if-wisconsin-created-the-manhattan",
-    "imageFile": "_default-whiskey.jpg",
+    "imageFile": "_default-auggie-whiskey.jpg",
     "ingredients": "Woodford Reserve, Solerno, St. Germain, Luxardo Maraschino",
     "components": [
-      "2 oz Woodford Reserve bourbon",
-      "1/2 oz Solerno blood orange liqueur",
-      "1/2 oz St. Germain elderflower liqueur",
-      "1/4 oz Luxardo Maraschino Originale"
+      { "item": "WoodfordReserve", "amount": "2 oz" },
+      { "item": "Solerno", "amount": "1/2 oz" },
+      { "item": "StGermain", "amount": "1/2 oz" },
+      { "item": "MaraschinoOriginale", "amount": "1/4 oz" }
     ],
     "instructions": "Combine ingredients and pour into lowball glass over large ice cube. Garnish with Luxardo cherry.",
     "backstory": "Created while brainstorming cocktails for a Morrison family visit. A bit of a spoof on the Wisconsin Old Fashioned. Of course, if Wisconsin did create the Manhattan it would have been call the Milwaukee.",
@@ -530,14 +504,13 @@
     "id": 25,
     "title": "Momma Lexi",
     "slug": "momma-lexi",
-    "imageFile": "_default-whiskey.jpg",
-    "ingredients": "Maker's Mark, Ghost Coast Orange, Cinnamon Whiskey, Amaro Nonino, Bitters",
+    "imageFile": "_default-gus-whiskey.jpg",
     "components": [
-      "2 oz Maker's Mark bourbon",
-      "1 oz Ghost Coast orange vodka",
-      "1/2 oz Cinnamon whiskey",
-      "1/2 oz Amaro Nonino",
-      "2 dashes Cherry bitters"
+      { "item": "Makers", "amount": "2 oz" },
+      { "item": "KetelOranje", "amount": "1 oz" },
+      { "item": "CinnamonWhiskey", "amount": "1/2 oz" },
+      { "item": "Nonino", "amount": "1/2 oz" },
+      { "item": "SpicedCherryBitters", "amount": "2 dashes" }
     ],
     "instructions": "Combine ingredients in shaker over ice. Strain into coupe glass. Garnish with Luxardo cherry.",
     "backstory": "Created in memory of Momma Lexi.",
@@ -552,12 +525,11 @@
     "id": 26,
     "title": "Mi Hermano",
     "slug": "mi-hermano",
-    "imageFile": "_default-whiskey.jpg",
-    "ingredients": "Maestro Dobel Anejo, Ketel One Orange, Agavero",
+    "imageFile": "_default-auggie-gnt.jpg",
     "components": [
-      "2 oz Maestro Dobel anejo",
-      "1 oz Ketel One orange vodka",
-      "1/2 oz Agavero agave liqueur"
+      { "item": "MaestroAnejo", "amount": "2 oz" },
+      { "item": "KetelOranje", "amount": "1 oz" },
+      { "item": "Agavero", "amount": "1/2 oz" }
     ],
     "instructions": "Combine and pour into lowball glass over large ice cube. Garnish with slice of lime.",
     "backstory": "Made for my brother Spencer.",
@@ -572,14 +544,13 @@
     "id": 27,
     "title": "Elderrita",
     "slug": "elderrita",
-    "imageFile": "",
-    "ingredients": "Reposado Tequila, St. Germain, Solerno, Lime, Agave",
+    "imageFile": "_default-gus-gnt.jpg",
     "components": [
-      "2 1/2 oz Reposado tequila",
-      "1 1/2 oz St. Germain elderflower liqueur",
-      "1/2 oz Solerno blood orange liqueur",
-      "1 1/2 oz Lime juice",
-      "1 tbsp Agave nectar"
+      { "item": "JimadorReposado", "amount": "2 1/2 oz" },
+      { "item": "StGermain", "amount": "1 1/2 oz" },
+      { "item": "Solerno", "amount": "1/2 oz" },
+      { "item": "LimeJuice", "amount": "1 1/2 oz" },
+      { "item": "Agave", "amount": "1 tbsp" }
     ],
     "instructions": "Combine all ingredients in a shaker and stir until agave dissolved. Pour over ice. Salt rimmed glass is optional.",
     "backstory": "Ashley requested an elderflower margarita.",
@@ -594,13 +565,12 @@
     "id": 28,
     "title": "Party Time",
     "slug": "party-time",
-    "imageFile": "_default-three.jpg",
-    "ingredients": "Ciroc Peach, Limoncello, Lemon, Grenadine",
+    "imageFile": "_default-gus-gnt.jpg",
     "components": [
-      "3 oz Ciroc Peach vodka",
-      "1 oz Limoncello",
-      "1 oz Lemon juice",
-      "1/4 oz Grenadine"
+      { "item": "CirocPeach", "amount": "3 oz" },
+      { "item": "Limoncello", "amount": "1 oz" },
+      { "item": "LemonJuice", "amount": "1 oz" },
+      { "item": "Grenadine", "amount": "1/4 oz" }
     ],
     "instructions": "Combine all ingredients and pour into a fun glass. Add a maraschino cherry and a straw.",
     "backstory": "The drink has a Barbie pink color and goes down quickly. It's original name was the Panty Dropper.",
@@ -615,9 +585,11 @@
     "id": 29,
     "title": "Cold Brandone",
     "slug": "cold-brandone",
-    "imageFile": "_default-whiskey.jpg",
-    "ingredients": "Four Roses, Coke Zero",
-    "components": ["2 oz Four Roses bourbon", "Coke Zero"],
+    "imageFile": "_default-gus-whiskey.jpg",
+    "components": [
+      { "item": "FourRoses", "amount": "2 oz" },
+      { "item": "CokeZero", "amount": "" }
+    ],
     "instructions": "Pour bourbon into an ice filled rocks glass and top with Coke Zero.",
     "backstory": "We recognize this is basically a whiskey and coke. But it is THE drink for Brandon.",
     "subs": "",
@@ -631,13 +603,12 @@
     "id": 30,
     "title": "Bon Mom",
     "slug": "bon-mom",
-    "imageFile": "_default-three.jpg",
-    "ingredients": "Tanqueray Seville, Grand Marnier, Simple, Club",
+    "imageFile": "_default-auggie-gnt.jpg",
     "components": [
-      "1 1/2 oz Tanqueray Seville gin",
-      "1/2 oz Grand Marnier",
-      "1/4 oz Simple syrup",
-      "Club soda"
+      { "item": "TanqueraySevilla", "amount": "1 1/2 oz" },
+      { "item": "GrandMarnier", "amount": "1/2 oz" },
+      { "item": "Simple", "amount": "1/4 oz" },
+      { "item": "ClubSoda", "amount": "" }
     ],
     "instructions": "Combine first three ingredients into a rocks glass filled with ice. Top with club soda.",
     "backstory": "Created for Bon when she called and requested a cocktail idea.",
@@ -652,16 +623,15 @@
     "id": 31,
     "title": "Princess Penelope",
     "slug": "princess-penelope",
-    "imageFile": "",
-    "ingredients": "Ciroc Peach, Ketel One Orange, St. Germain, Lemon",
+    "imageFile": "_default-penelope-martini.jpg",
     "components": [
-      "1 1/2 oz Ciroc Peach vodka",
-      "1 oz Ketel One Orange vodka",
-      "1/2 oz St. Germain elderflower liqueur",
-      "1/4 oz Lemon juice"
+      { "item": "CirocPeach", "amount": "1 1/2 oz" },
+      { "item": "KetelOranje", "amount": "1 oz" },
+      { "item": "StGermain", "amount": "1/2 oz" },
+      { "item": "LemonJuice", "amount": "1/4 oz" }
     ],
     "instructions": "Combine all ingredients in a shaker over ice and strain into a martini glass. Garnish with a lemon twist.",
-    "backstory": "For her Royal Highness, Penelope Mae Boofington, Duchess of Hall. Penelope is the Irresistibull that started it all. The peach reflects her Georgia roots. She loves lounging in the sun and yellow is her color. Hence, the cocktail's sunny hue.",
+    "backstory": "For her Royal Highness, Princess Penelope Mae Boofington, Duchess of Hall. Penelope is the Irresistibull that started it all. The peach reflects her Georgia roots. She loves lounging in the sun and yellow is her color. Hence, the cocktail's sunny hue.",
     "subs": "",
     "tags": [
       "vodka",
@@ -681,12 +651,11 @@
     "id": 32,
     "title": "Lemony Snicket",
     "slug": "lemony-snicket",
-    "imageFile": "",
-    "ingredients": "Ketel One Citroen, Cassis, Yellow Chartreuse",
+    "imageFile": "_default-auggie-whiskey.jpg",
     "components": [
-      "3 oz Ketel One Citroen vodka",
-      "1/2 oz Mathilde Cassis",
-      "1/4 oz Yellow Chartreuse"
+      { "item": "KetelCitroen", "amount": "3 oz" },
+      { "item": "MathildeCassis", "amount": "1/2 oz" },
+      { "item": "YellowChartreuse", "amount": "1/4 oz" }
     ],
     "instructions": "Combine all ingredients in a shaker over ice and strain into a martini glass. Garnish with a lemon twist.",
     "backstory": "Yellow chartreuse and cassis were the inspiring ingredients. Named while sipping cocktails in Ashley's library.",
@@ -701,14 +670,13 @@
     "id": 33,
     "title": "Sexy George",
     "slug": "sexy-george",
-    "imageFile": "",
-    "ingredients": "St. George Gin, St. George Absinthe, Brut Sparkling Wine, Lemon, Simple",
+    "imageFile": "_default-captain-champagne.jpg",
     "components": [
-      "2 oz St. George gin",
-      "1/2 oz St. George absinthe",
-      "1/4 oz Lemon juice",
-      "1/2 oz Simple syrup",
-      "2 oz Brut sparkling wine"
+      { "item": "StGeorgeGin", "amount": "2 oz" },
+      { "item": "Absinthe", "amount": "1/2 oz" },
+      { "item": "LemonJuice", "amount": "1/4 oz" },
+      { "item": "Simple", "amount": "1/2 oz" },
+      { "item": "SparklingBrut", "amount": "2 oz" }
     ],
     "instructions": "Pour sparkling wine into a coupe glass. Combine first four ingredients in a shaker over ice, stir, and strain into the wine filled coupe glass. Garnish with a lemon twist.",
     "backstory": "Made for Ashley when she wanted something with absinthe.",
@@ -723,12 +691,11 @@
     "id": 34,
     "title": "Evening Spritz",
     "slug": "evening-spritz",
-    "imageFile": "_default-champagne.jpg",
-    "ingredients": "Honey Bubbles, Cappelletti, Grapefruit Juice",
+    "imageFile": "_default-daisy-coupe.jpg",
     "components": [
-      "3 oz Honey Bubbles sparkling moscato",
-      "1 1/2 oz Grapefruit juice",
-      "1/2 oz Cappelletti"
+      { "item": "HoneyBubbles", "amount": "3 oz" },
+      { "item": "GrapefruitJuice", "amount": "1 1/2 oz" },
+      { "item": "Cappelletti", "amount": "1/2 oz" }
     ],
     "instructions": "Stir Honey Bubbles and grapefruit juice with ice to chill. Pour into a Collins glass. Top with the Honey Bubbles. Add ice and a straw.",
     "backstory": "Ashley wanted something with grapefruit to enjoy when sitting outside one summer evening. You can use Prosecco if you can't find Honey Bubbles.",
@@ -744,12 +711,11 @@
     "title": "Dammit Chris",
     "slug": "dammit-chris",
     "imageFile": "dammit-chris.jpg",
-    "ingredients": "Old Forester, Heering Cherry, Domaine de Canton, Orange Bitters",
     "components": [
-      "3 oz Old Forester Prohibition Style bourbon",
-      "3/4 oz Heering cherry liqueur",
-      "3/4 Domaine de Canton ginger liqueur",
-      "4 dashes Orange bitters"
+      { "item": "OldForesterBourbon", "amount": "3 oz" },
+      { "item": "HeeringCherry", "amount": "3/4 oz" },
+      { "item": "DomainCanton", "amount": "3/4 oz" },
+      { "item": "OrangeBitters", "amount": "4 dashes" }
     ],
     "instructions": "Combine all ingredients and pour into rocks glass with a large ice cube. Garnish with a Luxardo cherry.",
     "backstory": "Made for Ashley one evening while planning a Morrison family visit and Chris just wouldn't book the flights. Later on, 'Dammit Chris' was muttered by Janice after he spilled the movie night popcorn. Photo credit to Janice.",
@@ -764,13 +730,12 @@
     "id": 36,
     "title": "Tardy To The Party",
     "slug": "tardy-to-the-party",
-    "imageFile": "_default-whiskey.jpg",
-    "ingredients": "Woodford Reserve, Cointreau, Heering Cherry, Averna",
+    "imageFile": "_default-bruiser.jpg",
     "components": [
-      "2 oz Woodford Reserve bourbon",
-      "1 oz Cointreau",
-      "1/2 oz Heering cherry liqueur",
-      "1/2 oz Averna Amaro Siciliano"
+      { "item": "WoodfordReserve", "amount": "2 oz" },
+      { "item": "Cointreau", "amount": "1 oz" },
+      { "item": "HeeringCherry", "amount": "1/2 oz" },
+      { "item": "Averna", "amount": "1/2 oz" }
     ],
     "instructions": "Combine all ingredients and pour into rocks glass with a large ice cube. Garnish with a Luxardo cherry.",
     "backstory": "Created by Scott as an impromptu challenge to use Averna in a cocktail. And yes...he showed up late.",
@@ -786,13 +751,12 @@
     "title": "Birthday Girl",
     "slug": "birthday-girl",
     "imageFile": "birthday-girl.jpg",
-    "ingredients": "Ketel One Orange, Grand Marnier, Honey Bubbles, Grapefruit, Simple",
     "components": [
-      "2 oz Ketel One Orange vodka",
-      "2 oz Grapefruit juice",
-      "2 oz Honey Bubbles sparkling moscato",
-      "1/2 oz Grand Marnier",
-      "1/4 oz Simple syrup"
+      { "item": "KetelOranje", "amount": "2 oz" },
+      { "item": "GrapefruitJuice", "amount": "2 oz" },
+      { "item": "HoneyBubbles", "amount": "2 oz" },
+      { "item": "GrandMarnier", "amount": "1/2 oz" },
+      { "item": "Simple", "amount": "1/4 oz" }
     ],
     "instructions": "Pour Honey Bubbles into a martini glass. Combine the vodka, grapefruit juice, Grand Marnier, and simple syrup into a shake with ice and stir. Strain into the martini glass. Garnish with a grapefruit twist.",
     "backstory": "Created for the lovely Ashley on her 33rd birthday.",
@@ -810,12 +774,12 @@
     "imageFile": "hot-drink-cold-night.jpg",
     "ingredients": "Ketel One Orange, Hornitos Black Barrel, Lime, Simple, Serrano, Cilantro",
     "components": [
-      "1 1/2 oz Ketel One Orange vodka",
-      "1 oz Hornitos Black Barrel tequila",
-      "1 1/2 oz Lime juice",
-      "1/2 oz Simple syrup",
-      "Serrano pepper",
-      "Fresh Cilantro"
+      { "item": "KetelOranje", "amount": "1 1/2 oz" },
+      { "item": "HornitosBlack", "amount": "1 oz" },
+      { "item": "LimeJuice", "amount": "1 1/2 oz" },
+      { "item": "Simple", "amount": "1/2 oz" },
+      { "item": "Serrano", "amount": "" },
+      { "item": "Cilantro", "amount": "" }
     ],
     "instructions": "Use one small serrano pepper or about 2 inches of a larger pepper and cut into four pieces. Add serrano and 6-8 sprigs of fresh cilantro into a shaker, add lime juice, and muddle well. Add the remaining ingredients and stir together. Strain through a wire mesh into another shaker with ice. Stir well. Rim half of a coupe glass with Tajin. Strain cocktail into rimmed coupe glass.",
     "backstory": "It was an unseasonably cold winter night in Georgia and Ashley wanted something spicy. ",
@@ -830,13 +794,12 @@
     "id": 39,
     "title": "Hope",
     "slug": "hope",
-    "imageFile": "_default-two-martini.jpg",
-    "ingredients": "Botanist, St. Germain, Cointreau, Blackberry",
+    "imageFile": "_default-auggie-whiskey.jpg",
     "components": [
-      "3 oz Botanist gin",
-      "3/4 oz St. Germain elderflower liqueur",
-      "1/2 oz Cointreau",
-      "6 Fresh blackberries"
+      { "item": "Botanist", "amount": "3 oz" },
+      { "item": "StGermain", "amount": "3/4 oz" },
+      { "item": "Cointreau", "amount": "1/2 oz" },
+      { "item": "Blackberry", "amount": "6" }
     ],
     "instructions": "Muddle blackberries in a shaker. Add remaining ingredients and muddle again. Strain through wire strainer into another shaker with ice. Stir well. Strain again while pouring into a martini glass. Garnish with a blackberry.",
     "backstory": "Realize time with loved ones is priceless and not forever. While sipping, reflect back on how T. Blake touched your life.",
@@ -851,12 +814,11 @@
     "id": 40,
     "title": "Mr. Stox Martini",
     "slug": "mr-stox-martini",
-    "imageFile": "_default.jpg",
-    "ingredients": "Ketel One, Bombay Sapphire",
+    "imageFile": "_default-penelope-martini.jpg",
     "components": [
-      "3 parts Ketel One vodka",
-      "2 parts Bombay Sapphire gin",
-      "2 Tomolives"
+      { "item": "KetelOne", "amount": "3 parts" },
+      { "item": "BombaySapphire", "amount": "2 parts" },
+      { "item": "Tomolive", "amount": "2" }
     ],
     "instructions": "Combine all ingredients in a shaker over ice and strain into a martini glass. Garnish with two tomolives.",
     "backstory": "We cannot take credit for creating this one. It comes from Mr. Stox steakhouse in Anaheim, CA (now closed). My dad ordered this martini for us when we were traveling.",
@@ -871,13 +833,12 @@
     "id": 41,
     "title": "Sapphire in Bloom",
     "slug": "sapphire-in-bloom",
-    "imageFile": "_default-three.jpg",
-    "ingredients": "Bombay Sapphire, Italicus, Creme de Violet, Lemon",
+    "imageFile": "_default-daisy-coupe.jpg",
     "components": [
-      "2 1/2 oz Bombay Sapphire gin",
-      "3/4 oz Italicus",
-      "3/4 oz Creme de Violet",
-      "1/2 oz Lemon juice"
+      { "item": "BombaySapphire", "amount": "2 1/2 oz" },
+      { "item": "Italicus", "amount": "3/4 oz" },
+      { "item": "CremedeViolette", "amount": "3/4 oz" },
+      { "item": "LemonJuice", "amount": "1/2 oz" }
     ],
     "instructions": "Combine all ingredients in a shaker over ice and strain into a coupe glass. Garnish with a lemon twist.",
     "backstory": "Ashley said, 'Surprise me but it must have lemon'. The violet was the surprise.",
@@ -893,11 +854,10 @@
     "title": "That is Delightful",
     "slug": "that-is-delightful",
     "imageFile": "that-is-delightful.jpg",
-    "ingredients": "Ketel One Citroen, Old Raj, Cocchi Americano",
     "components": [
-      "1 1/2 oz Ketel One Citroen vodka",
-      "1 1/2 oz Old Raj dry gin (blue label)",
-      "1/4 oz Cocchi Americano"
+      { "item": "KetelCitroen", "amount": "1 1/2 oz" },
+      { "item": "OldRaj", "amount": "1 1/2 oz" },
+      { "item": "CocchiAmericano", "amount": "1/4 oz" }
     ],
     "instructions": "Combine all ingredients in a shaker over ice, stir well, and strain into a martini glass. Garnish with a lemon twist.",
     "backstory": "Ashley wanted a classic style martini with an interesting twist.",
@@ -906,6 +866,71 @@
     "created": "2025-02-07",
     "category": ["vodka", "martini", "gin"],
     "ashleyfav": 0,
+    "housefav": 1
+  },
+  {
+    "id": 43,
+    "title": "Through the Valley",
+    "slug": "through-the-valley",
+    "imageFile": "_default-penelope-martini.jpg",
+    "components": [
+      { "item": "StGeorgeValley", "amount": "2 oz" },
+      { "item": "Solerno", "amount": "1 oz" },
+      { "item": "StGermain", "amount": "1/2 oz" },
+      { "item": "HoneyBubbles", "amount": "2 oz" }
+    ],
+    "instructions": "Combine first three ingredients in a shaker over ice, stir well, and strain into a coupe glass. Top with the Honey Bubbles. Garnish with a orange twist.",
+    "backstory": "Ashley asked for something with the St. George Valley. A new find that day.",
+    "subs": "Prosecco can be substituted for the Honey Bubbles.",
+    "tags": ["gin", "martini", "sparkling", "orange"],
+    "created": "2025-02-17",
+    "category": ["sparkling", "martini", "gin"],
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 44,
+    "title": "Lavender Lemon",
+    "slug": "lavender-lemon",
+    "imageFile": "_default-daisy-coupe.jpg",
+    "components": [
+      { "item": "KetelCitroen", "amount": "1 1/2 oz" },
+      { "item": "CitadelJardin", "amount": "1 oz" },
+      { "item": "LemonJuice", "amount": "1/2 oz" },
+      { "item": "LavenderSimple", "amount": "1/2 oz" },
+      { "item": "LavenderSugar", "amount": "" }
+    ],
+    "instructions": "Combine all ingredients except the sugar in a shaker over ice and stir well. Rim a coupe glass with the lavender sugar. Strain the drink into the rimmed glass.",
+    "backstory": "One night I was looking for a reason to use the lavender sugar.",
+    "subs": "",
+    "tags": ["gin", "martini", "vodka", "lavender"],
+    "created": "2025-03-06",
+    "category": ["vodka", "martini", "gin"],
+    "ashleyfav": 0,
+    "housefav": 0
+  },
+  {
+    "id": 45,
+    "title": "Sconnie Girl (aka Bloody Mary)",
+    "slug": "sconnie-girl",
+    "imageFile": "_default-auggie-gnt.jpg",
+    "components": [
+      { "item": "KetelOne", "amount": "2 oz" },
+      { "item": "TomatoJuice", "amount": "5.5 oz can" },
+      { "item": "LemonJuice", "amount": "1/2 oz" },
+      { "item": "OliveBrine", "amount": "1/2 oz" },
+      { "item": "Worcestershire", "amount": "1/4 oz" },
+      { "item": "Horseradish", "amount": "1/2 tsp" },
+      { "item": "NiceSpicy", "amount": "1 tsp" },
+      { "item": "Tabasco", "amount": "10+ dashes" }
+    ],
+    "instructions": "Combine all ingredients in a large glass and stir well. Fill with ice. Garnish with your favorite Bloody Mary toppings.",
+    "backstory": "Ashley (a Wisconsin native) also calls this 'The recovery drink of my people.' Everyone from Wisconsin knows that Bloody Marys are religion. The first time I made Ashley a Bloody Mary, I was so worked up about getting the flavor of the mix just right, I forgot to add the vodka! That makes it a Bloody Shame.",
+    "subs": "",
+    "tags": ["tomato", "vodka", "wisconsin"],
+    "created": "2025-03-06",
+    "category": ["vodka"],
+    "ashleyfav": 1,
     "housefav": 1
   }
 ]
